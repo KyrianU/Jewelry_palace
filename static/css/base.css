@@ -57,6 +57,11 @@ body {
     border: 1px solid black !important;
 }
 
+.bg-gold {
+    background: gold !important;
+    color: #000 important;
+}
+
 /* ------------------- media queries */
 
 /* Slightly larger container on xl screens */
