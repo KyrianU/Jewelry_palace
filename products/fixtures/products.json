@@ -1,0 +1,353 @@
+[
+    {
+        "pk": 1,
+        "model": "products.product",
+        "fields": {
+            "category": 1,
+            "sku": "1001",
+            "name": "Rings",
+            "price": "35.99",
+            "rating": "4.6",
+            "description": "Men's roman numeral ring",
+            "image_url": null,
+            "image": "Men-roman-ring.jpg"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "products.product",
+        "fields": {
+            "category": 1,
+            "sku": "1002",
+            "name": "Rings",
+            "price": "30.99",
+            "rating": "4.4",
+            "description": "Men's chain stainless steel ring",
+            "image_url": null,
+            "image": "Men-ring-2.jpg"
+        }
+    },
+    {
+        "pk": 3,
+        "model": "products.product",
+        "fields": {
+            "category": 1,
+            "sku": "1003",
+            "name": "Rings",
+            "price": "32.99",
+            "rating": "4.5",
+            "description": "Men's matte stainless steel ring",
+            "image_url": null,
+            "image": "men-ring-3.jpg"
+        }
+    },
+    {
+        "pk": 4,
+        "model": "products.product",
+        "fields": {
+            "category": 1,
+            "sku": "1004",
+            "name": "Rings",
+            "price": "37.99",
+            "rating": "4.8",
+            "description": "Men's black stainless steel ring",
+            "image_url": null,
+            "image": "men-ring-4.jpg"
+        }
+    },
+    {
+        "pk": 5,
+        "model": "products.product",
+        "fields": {
+            "category": 1,
+            "sku": "1005",
+            "name": "Rings set",
+            "price": "40.99",
+            "rating": "4.8",
+            "description": "Men's stainless steel ringset in matte black, gold and silver",
+            "image_url": null,
+            "image": "men-ringset-1.jpg"
+        }
+    },
+    {
+        "pk": 6,
+        "model": "products.product",
+        "fields": {
+            "category": 1,
+            "sku": "1006",
+            "name": "Rings set",
+            "price": "40.99",
+            "rating": "4.7",
+            "description": "Men's faux carbon fibre mood ringset in dark and light colour",
+            "image_url": null,
+            "image": "mens-ringset-2.jpg"
+        }
+    },
+    {
+        "pk": 7,
+        "model": "products.product",
+        "fields": {
+            "category": 2,
+            "sku": "2001",
+            "name": "Necklace",
+            "price": "49.99",
+            "rating": "4.7",
+            "description": "Men's Iced Cuban Link Chain",
+            "image_url": null,
+            "image": "men-cuban-necklace.jpg"
+        }
+    },
+    {
+        "pk": 8,
+        "model": "products.product",
+        "fields": {
+            "category": 2,
+            "sku": "2002",
+            "name": "Necklace",
+            "price": "55.99",
+            "rating": "4.9",
+            "description": "Men's Iced Cuban Link Chain In Gold",
+            "image_url": null,
+            "image": "men-cuban-necklace-4.jpg"
+        }
+    },
+    {
+        "pk": 9,
+        "model": "products.product",
+        "fields": {
+            "category": 2,
+            "sku": "2003",
+            "name": "Necklace",
+            "price": "53.99",
+            "rating": "4.7",
+            "description": "Men's Iced Cuban Link Chain In Silver",
+            "image_url": null,
+            "image": "Men-cuban-necklace-2.jpg"
+        }
+    },
+    {
+        "pk": 10,
+        "model": "products.product",
+        "fields": {
+            "category": 2,
+            "sku": "2004",
+            "name": "Necklace",
+            "price": "39.99",
+            "rating": "4.6",
+            "description": "Men's silver necklace with compass pendant",
+            "image_url": null,
+            "image": "men-necklace-1.jpg" 
+        }
+    },
+    {
+        "pk": 11,
+        "model": "products.product",
+        "fields": {
+            "category": 2,
+            "sku": "2005",
+            "name": "Necklace",
+            "price": "30.99",
+            "rating": "4.7",
+            "description": "Men's stainless steel silver chain",
+            "image_url": null,
+            "image": "men-necklace-2.jpg"
+        }
+    },
+    {
+        "pk": 12,
+        "model": "products.product",
+        "fields": {
+            "category": 2,
+            "sku": "2006",
+            "name": "Necklace",
+            "price": "55.99",
+            "rating": "4.8",
+            "description": "Men's Cuban Link Chain In Silver With Cross Sword Pendant",
+            "image_url": null,
+            "image": "men-necklace-3.jpg"
+        }
+    },
+    {
+        "pk": 13,
+        "model": "products.product",
+        "fields": {
+            "category": 3,
+            "sku": "3001",
+            "name": "Cuban Link Bracelet",
+            "price": "20.99",
+            "rating": "4.7",
+            "description": "Men Cuban Link Bracelet In Matte Black",
+            "image_url": null,
+            "image": "men-bracelet.jpg"
+        }
+    },
+    {
+        "pk": 14,
+        "model": "products.product",
+        "fields": {
+            "category": 3,
+            "sku": "3002",
+            "name": "Cuban Link Bracelet",
+            "price": "25.99",
+            "rating": "4.8",
+            "description": "Men's Cuban Link Bracelet In silver",
+            "image_url": null,
+            "image": "men-cuban-bracelet.png"
+        }
+    },
+    {
+        "pk": 15,
+        "model": "products.product",
+        "fields": {
+            "category": 3,
+            "sku": "3003",
+            "name": "Cuban Chain Bracelet",
+            "price": "27.99",
+            "rating": "4.7",
+            "description": "Men Cuban Chain Bracelet In Gold",
+            "image_url": null,
+            "image": "men-cuban-bracelets-2.jpg"
+        }
+    },
+    {
+        "pk": 16,
+        "model": "products.product",
+        "fields": {
+            "category": 3,
+            "sku": "3004",
+            "name": "Men's bracelet",
+            "price": "20.99",
+            "rating": "4.6",
+            "description": "Men's Stainless Steel Bracelet In Silver",
+            "image_url": null,
+            "image": "men-bracelets-2.jpg"
+        }
+    },
+    {
+        "pk": 17,
+        "model": "products.product",
+        "fields": {
+            "category": 3,
+            "sku": "3005",
+            "name": "Men's bracelet",
+            "price": "25.99",
+            "rating": "4.5",
+            "description": "Men's Woven Style Bracelet Sets",
+            "image_url": null,
+            "image": "men-bracelet-set-1.jpg"
+        }
+    },
+    {
+        "pk": 18,
+        "model": "products.product",
+        "fields": {
+            "category": 3,
+            "sku": "3006",
+            "name": "Men's bracelet",
+            "price": "40.99",
+            "rating": "4.7",
+            "description": "Men's Stainless Steel Roman Numeral Bracelets In Rose Gold, Silver And Matte Black",
+            "image_url": null,
+            "image": "Stainless-steel-roman-bracelets.jpg"
+        }
+
+    },
+    {
+        "pk": 19,
+        "model": "products.product",
+        "fields": {
+            "category": 5,
+            "sku": "5001",
+            "name": "Rings",
+            "price": "15.99",
+            "rating": "4.4",
+            "description": "Men's Stainless Steel Ring And Black With Purple Inprint",
+            "image_url": null,
+            "image": "men-stainless-steel-ring.jpg"
+        }
+    },
+    {
+        "pk": 20,
+        "model": "products.product",
+        "fields": {
+            "category": 5,
+            "sku": "5002",
+            "name": "Rings",
+            "price": "13.99",
+            "rating": "4.4",
+            "description": "Men's Diamond Ring",
+            "image_url": null,
+            "image": "Men-diamond-ring.jpg"
+        }
+    },
+    {
+        "pk": 21,
+        "model": "products.product",
+        "fields": {
+            "category": 5,
+            "sku": "5003",
+            "name": "Necklace",
+            "price": "10.99",
+            "rating": "4.5",
+            "description": "Men's Necklace With Cross Pendant",
+            "image_url": null,
+            "image": "men-necklace-6.jpg"
+        }
+    },
+    {
+        "pk": 22,
+        "model": "products.product",
+        "fields": {
+            "category": 5,
+            "sku": "5004",
+            "name": "Necklace",
+            "price": "12.99",
+            "rating": "4.5",
+            "description": "Men's Stainless Necklace With Lighting",
+            "image_url": null,
+            "image": "men-necklace-5.jpg"
+        }
+    },
+    {
+        "pk": 23,
+        "model": "products.product",
+        "fields": {
+            "category": 6,
+            "sku": "6001",
+            "name": "Bracelets",
+            "price": "28.99",
+            "rating": "4.9",
+            "description": "Men's Charm Bracelet Set",
+            "image_url": null,
+            "image": "men-bracelet-charm2.jpg"
+        }
+    },
+    {
+        "pk": 24,
+        "model": "products.product",
+        "fields": {
+            "category": 6,
+            "sku": "6002",
+            "name": "Rings",
+            "price": "27.99",
+            "rating": "5",
+            "description": "Men's Titanium Ring",
+            "image_url": null,
+            "image": "men-titanium-ring.jpg"
+        }
+    },
+    {
+        "pk": 25,
+        "model": "products.product",
+        "fields": {
+            "category": 6,
+            "sku": "6003",
+            "name": "Necklace",
+            "price": "35.99",
+            "rating": 5,
+            "description": "Men's Silver Necklace With Diamond Engraved Christ Pendant",
+            "image_url": null,
+            "image": "men-jesus-christ-necklace.jpg"
+        }
+    }
+]
