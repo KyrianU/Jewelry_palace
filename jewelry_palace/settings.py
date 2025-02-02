@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-=fs%r4nf%615juz1mkur0g(&basnx*$d4-61-^s_*v=%((z$(e
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-kyrianu-jewelrypalace-4gxzjsmts78.ws.codeinstitute-ide.net']
+ALLOWED_HOSTS = ['127.0.0.1',]
 
 
 # Application definition
@@ -87,7 +87,7 @@ AUTHENTICATION_BACKENDS = [
 
 ]
 
-SITE_ID = 1 
+SITE_ID = 1
 
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
