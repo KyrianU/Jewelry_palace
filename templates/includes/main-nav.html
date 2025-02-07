@@ -17,10 +17,10 @@
                 Jewellery
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="jewellery-link">
-                <a href="" class="dropdown-item">Necklace</a>
-                <a href="" class="dropdown-item">Rings</a>
-                <a href="" class="dropdown-item">Bracelets</a>
-                <a href="" class="dropdown-item">All Jewellery</a>
+                <a href="{% url 'products' %}?category=necklaces" class="dropdown-item">necklace</a>
+                <a href="{% url 'products' %}?category=rings" class="dropdown-item">rings</a>
+                <a href="{% url 'products' %}?category=bracelets" class="dropdown-item">bracelets</a>
+                <a href="{% url 'products' %}?category=necklaces,rings,bracelets" class="dropdown-item">all jewellery</a>
             </div>
         </li>
 
@@ -41,10 +41,10 @@
                 Special Offers
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="specials-link">
-                <a href="" class="dropdown-item">New Arrivals</a>
-                <a href="" class="dropdown-item">Sale</a>
-                <a href="" class="dropdown-item">Clearance</a>
-                <a href="" class="dropdown-item">All Specials</a>
+                <a href="{% url 'products' %}?category=new_arrivals" class="dropdown-item">New Arrivals</a>
+                <a href="{% url 'products' %}?category=sale" class="dropdown-item">Sale</a>
+                <a href="{% url 'products' %}?category=clearance" class="dropdown-item">Clearance</a>
+                <a href="{% url 'products' %}?category=new_arrivals,sale,clearance" class="dropdown-item">All Specials</a>
             </div>
         </li>
     </ul>
