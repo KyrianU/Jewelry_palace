@@ -104,6 +104,23 @@ a.category-badge > span.badge:hover {
     cursor: pointer;
 }
 
+/* ------------------- Bootstrap toast */
+
+.message-container {
+    position: fixed;
+    top: 75px;
+    right: 15px;
+    z-index: 99999999999;
+}
+
+.custom-toast {
+    overflow: visible;
+}
+
+.toast-capper {
+    height: 5px;
+}
+
 /* ------------------- media queries */
 
 /* Slightly larger container on xl screens */
