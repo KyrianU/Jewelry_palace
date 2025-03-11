@@ -159,6 +159,13 @@ class StripeWH_Handler:
                             ERROR: {e}',
                         status=500
                     )
+        print("order:", order)
+        print("Shipping details:", shipping_details)
+        print("Billing Details:", billing_details)
+        print("Grand Total:", grand_total)
+        print("Pid:", pid)
+        print("Bag:", bag)
+
         self._send_confirmation_email(order)
         return HttpResponse(
             content=f'Webhook received: {event["type"]} |\

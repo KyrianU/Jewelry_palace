@@ -13,3 +13,6 @@ The purpose of Jewelry Palace is to cater to jewellery enthusiast who value uniq
   - Returning shoppers who appreciate order history tracking and secure account features
 
 By addressing these needs, Jewelry Palace aims to bridge the gap between boutiquq jewelry brands and their online customers
+
+## User Experience
+
