@@ -2,18 +2,10 @@ from django import forms
 from .models import Product, Category
 
 
-class ProductForm(forms.Model.form):
+class ProductForm(forms.ModelForm):
     class Meta:
         model = Product
-        fields = {
-            "name",
-            "category",
-            "price",
-            "discounted_price",
-            "description",
-            "size",
-            "image",
-        }
+        fields = '__all__'
 
     def __init__self(self, *args, **kwargs):
         """Initialize form and fetch category choices."""
