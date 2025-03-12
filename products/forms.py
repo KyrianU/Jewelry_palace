@@ -1,4 +1,5 @@
 from django import forms
+from .widgets import CustomCLearableFileInput
 from .models import Product, Category
 
 
@@ -6,6 +7,10 @@ class ProductForm(forms.ModelForm):
     class Meta:
         model = Product
         fields = '__all__'
+
+    image = forms.ImageField(label='Image',
+                             required=False,
+                             widget=CustomCLearableFileInput)
 
     def __init__self(self, *args, **kwargs):
         """Initialize form and fetch category choices."""
