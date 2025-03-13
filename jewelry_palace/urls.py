@@ -29,5 +29,8 @@ urlpatterns = [
     path('privacy/',
          TemplateView.as_view(template_name='privacy.html'),
          name='privacy'),
+    path('terms/',
+         TemplateView.as_view(template_name='terms.html'),
+         name='terms'),
     path('profiles/', include('profiles.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
