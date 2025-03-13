@@ -108,6 +108,20 @@ input[name='q']::placeholder {
     color: #aab7c4;
 }
 
+#top  {
+    background-color: black !important;
+    color: white !important;
+}
+#top a.nav-link,
+#top p {
+    color: white !important;
+}
+
+nav {
+    background-color: black !important;
+    color: white !important;
+}
+
 /* ------------------- Bootstrap toast */
 
 .message-container {
