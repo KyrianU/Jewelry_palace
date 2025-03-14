@@ -26,7 +26,9 @@ body {
 
 .main-logo-link {
     width: fit-content;
+    color: #fff;
 }
+
 
 .shop-now-button {
     background: black;
@@ -118,8 +120,12 @@ input[name='q']::placeholder {
 }
 
 nav {
-    background-color: black !important;
+    background-color: gold !important;
     color: white !important;
+}
+
+#main-nav {
+    color: black;
 }
 
 /* ------------------- Bootstrap toast */
