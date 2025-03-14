@@ -33,7 +33,7 @@ DEBUG = True
 ALLOWED_HOSTS = [
     '127.0.0.1',  # Local Preview
     'localhost',  # Listen for stripe webhooks
-    'https://jewelry-palace-f262e5dcfc23.herokuapp.com',  # heroku application
+    'jewelry-palace-f262e5dcfc23.herokuapp.com',  # heroku application
     ]
 
 
