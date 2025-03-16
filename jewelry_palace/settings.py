@@ -134,14 +134,13 @@ DATABASES = {
 }
 if 'DATABASE_URL' in os.environ:
     DATABASES = {
-        'default': dj_database_url.parse(
-            'postgresql://neondb_owner:npg_RgGUsZL8hP1V@ep-hidden-term-a2dguek5.eu-central-1.aws.neon.tech/banjo_hung_syrup_799399')
+        'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
     }
 else:
     DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.sqlite3',
-            'NAME': BASE_DIR / 'db.sqlite3',
+            'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
         }
     }
 
