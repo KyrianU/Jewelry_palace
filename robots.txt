@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /accounts/
+Sitemap: https://jewelry-palace-f262e5dcfc23.herokuapp.com/sitemap.xml
