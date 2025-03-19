@@ -59,8 +59,8 @@ class Order(models.Model):
                 settings.STANDARD_DELIVERY_PERCENTAGE / 100
         else:
             self.delivery_cost = 0
-            self.grand_total = self.order_total + self.delivery_cost
-            self.save()
+        self.grand_total = self.order_total + self.delivery_cost
+        self.save()
 
     def save(self, *args, **kwargs):
         """
