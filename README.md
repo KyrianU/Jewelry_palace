@@ -16,6 +16,10 @@ By addressing these needs, Jewelry Palace aims to bridge the gap between boutiqu
 
 ## User Experience
 
+User stories are usually short, simple descritpions of a feature or functionally told from the perspective of the user. The user help ensures the development process remains user-focused. Below are the user stories created for this project:
+
+
+
 ## Testing
 
 ### Manual testing 
