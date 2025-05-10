@@ -1,7 +1,6 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
-from django.db.utils import IntegrityError
 from django.db.models import Q
 from django.db.models.functions import Lower
 
@@ -83,31 +82,43 @@ def product_detail(request, product_id):
 
 @login_required
 def add_review(request, product_id):
-    """Add a review for a product"""
+    """
+    A view to add a new review
+    """
+
     product = get_object_or_404(Product, pk=product_id)
+    user_review = product.reviews.all()
 
-    # Prevents a duplication of reviews
-    if Review.objects.filter(product=product, user=request.user).exists():
-        messages.error(request, "You have already reviewed this product.")
-        return redirect("product_detail", product_id=product.id)
+    if user_review:
+        messages.error(request,
+                       'You have already reviewed this product.')
+        return redirect(reverse('product_detail', args=[product.id]))
 
-    form = ReviewForm(request.POST or None)
-
-    if request.method == "POST" and form.is_valid():
-        try:
+    if request.method == 'POST':
+        form = ReviewForm(request.POST)
+        if form.is_valid():
             review = form.save(commit=False)
-            review.product = product
             review.user = request.user
-            review.save()
-            messages.success(request, "Thank you for your review!")
-            return redirect("product_detail", product_id=product.id)
-        except IntegrityError:
-            messages.error(
-                request, "An error occurred while saving your review.")
+            review.product = product
 
-    return render(
-        request, "products/add_review.html", {"form": form, "product": product}
-        )
+            review.save()
+            print('review')
+            messages.success(request,
+                             'Your product review has been submitted.')
+            return redirect(reverse('product_detail', args=[product_id]))
+        else:
+            messages.error(request,
+                           'An error occured whilst saving your review')
+    else:
+        form = ReviewForm()
+
+        template = 'products/add_review.html'
+        context = {
+            'product': product,
+            'form': form,
+        }
+
+        return render(request, template, context)
 
 
 @login_required

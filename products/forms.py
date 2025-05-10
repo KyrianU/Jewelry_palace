@@ -29,7 +29,7 @@ class ReviewForm(forms.ModelForm):
 
     class Meta:
         model = Review
-        fields = ["rating", "comment"]
+        fields = ["title", "rating", "comment"]
 
     def __init__(self, *args, user=None, product=None, **kwargs):
         """

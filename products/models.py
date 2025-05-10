@@ -1,4 +1,5 @@
 from django.db import models
+from django.core.validators import MinValueValidator, MaxValueValidator
 from django.contrib.auth.models import User
 
 # Create your models here.
@@ -39,28 +40,24 @@ class Product(models.Model):
 
 class Review(models.Model):
     """
-    Model representing user reviews for products.
+    Models representing user review for products.
     """
 
-    product = models.ForeignKey(
-        Product, on_delete=models.CASCADE, related_name="reviews"
+    product = models.ForeignKey(Product,
+                                on_delete=models.CASCADE,
+                                related_name='reviews')
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    title = models.CharField(max_length=200, null=True, blank=True)
+    rating = models.IntegerField(
+        validators=[MinValueValidator(1), MaxValueValidator(5)],
+        null=True,
+        blank=True
     )
-    user = models.ForeignKey(
-        User, on_delete=models.CASCADE, related_name="reviews"
-    )
-    rating = models.PositiveSmallIntegerField()
-    comment = models.TextField(blank=True, null=True)
-    created_at = models.DateTimeField(auto_now_add=True)
-    updated_at = models.DateTimeField(auto_now=True)
+    comment = models.TextField(null=True, blank=True)
+    date_added = models.DateTimeField(auto_now_add=True)
 
     class Meta:
-        constraints = [
-            models.UniqueConstraint(
-                fields=["product", "user"], name="unique_product_user_review"
-            )
-        ]
-        ordering = ["-created_at"]  # Newest reviews first
+        ordering = ['-date_added']
 
     def __str__(self):
-        return f"{self.user.username} \
-            reviewed {self.product.name} - {self.rating}/5"
+        return f'Review for {self.product.name} by {self.user.username}'
