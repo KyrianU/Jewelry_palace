@@ -1,0 +1,65 @@
+{% extends "base.html" %}
+{% load static %}
+{% load crispy_forms_tags %}
+
+{% block extra_title %} | Contact Us!{% endblock %}
+
+{% block content %}
+    <div class="container px-4 px-lg-5 py-5">
+
+        <header class="row">
+            <div class="col-12 col-md-6 offset-md-3">
+                <h1 class="display-6 text-center" id="contact-title-section">Contact Us!</h1>
+                <hr class="mb-4" aria-hidden="true">
+            </div>
+        </header>
+
+        <section class="row" aria-labelledby="contact-title-section">
+            <div class="col-12 col-md-6 mb-4">
+                <p class="lead mb-3 fs-6 fs-md-5">We would love to hear from you!<br>Fill out the form or reach out at the information below and we shall get back to you as soona as we can.<br></p>
+
+                <div class="mt-4">
+                    <h4 class="text-uppercase mb-3">Our Information</h4><hr>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">
+                            <i class="fas fa-home me-2" aria-hidden="true"></i><span>
+                                London, United Kingdom
+                            </span>
+                        </li>
+                        <li class="mb-2">
+                            <i class="fas fa-envelope me-2" aria-hidden="true"></i><span>
+                                Jewelrypalace@example.com
+                            </span>
+                        </li>
+                        <li class="mb-2">
+                            <i class="fas fa-phone me-2" aria-hidden="true"></i><span>
+                                +44(0)7700 900794
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <div class="col-12 col-md-6" style="box-shadow: 8px 8px 15px #FFD700;">
+                <div class="card no-hover border border-white-subtle rounded-3 shadow">
+                    <div class="card-body p-4">
+                        <h4 class="card-title mb-3">Get in Touch!</h4>
+                        <form method="POST" action="{% url 'contact' %}" class="form" aria-label="Contact form">
+                            {% csrf_token %}
+                            {{ form|crispy }}
+                            <div class="text-end mt-4">
+                                <button type="submit" class="btn btn-warning" aria-label="Submit and send your message">Send Message</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+{% endblock %}
+
+{% block postloadjs %}
+{{ block.super }}
+
+{% endblock %}

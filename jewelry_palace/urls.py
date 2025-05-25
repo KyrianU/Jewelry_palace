@@ -36,4 +36,5 @@ urlpatterns = [
          TemplateView.as_view(template_name='about.html'),
          name='about'),
     path('profiles/', include('profiles.urls')),
+    path('contact/', include('contact.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
