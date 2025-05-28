@@ -14,7 +14,24 @@ The purpose of Jewelry Palace is to cater to jewellery enthusiast who value uniq
 
 By addressing these needs, Jewelry Palace aims to bridge the gap between boutiquq jewelry brands and their online customers
 
-## User Experience
+## Table of Contents 
+
+1. [Introduction](#introduction)
+2. [Project Planning](#project-planning)
+3. [UX](#ux-user-experience)
+4. [Database Structure](#database-structure)
+5. [Design](#design)
+6. [Features](#features)
+7. [Web Marketing](#web-marketing)
+8. [Social Media](#social-media)
+9. [Technologies Used](#technologies-used)
+10. [Testing](#testing)
+11. [Deployment](#deployment)
+12. [Credits](#credits)
+
+[Back to Top ⇧](#jewelry-palace)
+
+## UX User Experience
 
 User stories are usually short, simple descritpions of a feature or functionally told from the perspective of the user. The user help ensures the development process remains user-focused. Below are the user stories created for this project:
 
