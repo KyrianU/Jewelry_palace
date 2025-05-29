@@ -98,3 +98,33 @@ User stories are usually short, simple descritpions of a feature or functionally
 |Logout message | logout message shown | You have succesfully signed out message shown to the user once successfully signed out | Pass  |
 Footer | Social media links | clicking on social media icons in the footer open the link in a new tab | Pass |
 Footer | Contact info | footer display clear contact info as to how to get in touch | Pass |
+
+
+# Database Structure 
+
+## Entity Relationship Diagram
+
+The Database scheme for Jewelry Palace is designed to efficiently all of the core functionality while maintaining data integrity and adequate performance. Below is the diagram show how the various models are connected to each other:
+
+<details>
+  <summary>Database Scheme</summary>
+
+  ![](docs/database.png)
+
+  </details>
+
+7 Tables was created for the Wesbite. Order, OrderLineItem, Review, Contact, Product, Category and UserProfile
+
+The Contact table is used by users to submit queries that they may have, ranging from general inquiries, Returns, Order, Feedback, Availability and any oher adhoc queries. It has the following fields of Primary Key ID, name, email, subject and body.
+
+The Product model contains information regarding all the products listed on the website. It has the following field as Primary Key of ID, name, sku, descriptions, price, has_sizes, rating, image and catergory_id
+
+The UserProfile table contains information in relation to the user's profile. It has the following fields of Primary Key ID, user_id, default_phone_number, default_country, default_county, default_postcode, default_town_or_city, default_street_address1, default_street_address2
+
+The Review table is used by users to submit a review on a product they've already purchased. It has the following fields of Primay Key ID, product_id, name, email, comment, created_on and approved_on
+
+The Category table is highlights what category the products listed on the website falls into. It has a primary key ID, name and friendly_name
+
+The Order model contains information in relation to a customer's final order. It has the following field Primary Key Id, order_number, user_profile, full_name, email, phone_number, country, postcode, county, town_or_city, street_address1, street_address2, date, grand_total, order_total, delivery_cost, original_bag, stripe_pid and user_profile_id.
+
+The OrderlineItem table contains information in regards to an order. It has the following fields Primary Key Id, product_size, quantity, lineitem_total, order_id and product_id.
