@@ -35,12 +35,27 @@ By addressing these needs, Jewelry Palace aims to bridge the gap between boutiqu
 
 User stories are usually short, simple descritpions of a feature or functionally told from the perspective of the user. The user help ensures the development process remains user-focused. Below are the user stories created for this project:
 
-## First Time Visitor
+### User stories
 
-* As a user, I can browse the product categories in order to find what I am looking for
-* As a user, I want to be able to search for a product by name in order to locate specific items with ease
-* As a user, I can see a detailed breakdown of my order total, which information such as discounts cost, shipping costs in order to gain a full understanding of the full price I am paying.
-* As a user, I'm able to receive an email confirmation once I've completed my order - which confirms my order has been successfull.
+* As a user, I can browse the product categories in order to find what I am looking for [#1](https://github.com/KyrianU/Jewelry_palace/issues/1)
+* As a user, I want to be able to search for a product by name in order to locate specific items with ease [#3](https://github.com/KyrianU/Jewelry_palace/issues/3)
+* As a user, I can see a detailed breakdown of my order total, which information such as discounts cost, shipping costs in order to gain a full understanding of the full price I am paying. [#10](https://github.com/KyrianU/Jewelry_palace/issues/10)
+* As a user, I'm able to receive an email confirmation once I've completed my order - which confirms my order has been successfull. [#11](https://github.com/KyrianU/Jewelry_palace/issues/11)
+* As a user, I want to be able to see some details regarding the product information in order to make an informed purchase [#5](https://github.com/KyrianU/Jewelry_palace/issues/5)
+* As a user, I want to be able to login and register in order to save my details and view my order history [#6](https://github.com/KyrianU/Jewelry_palace/issues/6)
+* As a user, I want to be able to freely shop on the website, wishing for my data to be protected [#7](https://github.com/KyrianU/Jewelry_palace/issues/7)
+* As a user, I want to a receive a confirmation message for when my order has been successful [#9](https://github.com/KyrianU/Jewelry_palace/issues/9)
+* As a user, I can securely save my payment details so that futures purchases are made quicker and easier (if logged in) [#16](https://github.com/KyrianU/Jewelry_palace/issues/16)
+* As a user, I can sign up for a newsletter so I can receive regular updates and promotions [#17](https://github.com/KyrianU/Jewelry_palace/issues/17)
+* As a user, I can leave reviews for products so that I can share feedback with other customers [#18](https://github.com/KyrianU/Jewelry_palace/issues/18)
+
+### Admin User stories
+
+* As an Admin, I can add new products to the collection so that users can see and purchase the latest item available on the site. [#12](https://github.com/KyrianU/Jewelry_palace/issues/12)
+* As an admin, I can edit existing product detail such as name, price, and description in order for the collection to be up to date as always [#13](https://github.com/KyrianU/Jewelry_palace/issues/13)
+* As admin, I have the functionality to delete products from the site if I wanted to discontinue a certain product or refresh the site. [#14](https://github.com/KyrianU/Jewelry_palace/issues/14)
+* As an admin, I am able to assign products to specific categories so that users can have an easier time finding their chosen item while browsing [#15](https://github.com/KyrianU/Jewelry_palace/issues/15)
+
 * As a user, I can access to website on my mobile device so that I can browse and shop like I would on PC.
 * As a user, I can see a summary of the product in my cart so that I can confirm my order is correct before checking out.
 * as a User, I can access a clear navitgation menu in order to find information or products I need.
