@@ -4,7 +4,35 @@
 
 Jewelry Palace is a fictional e-commerce jewellery retailer based in England. Founded in November 2024, Jewelry Palace specialises in selling jewellery, bought from a manufacturers clearance stock and then sold at a discounted price online
 
-## Purpose
+## Purpose & objective
+
+* Enhanced User Experience:
+    * Design a user-friendly website that is visually appealing, intuitive and easy enough to navigate
+    * Ensuring that that the app/website is accessible and fully responsive across all devices including, mobiles, tabelts and desktop/laptops
+
+* Security & Reliability:
+    * The Implementation of strong authentication and authorization process to protect user data
+    * Conducting code validation and security testing in order to maintain a stable, secure application.
+
+* Smooth Payment Process and checkout:
+    * Develop a smooth and secure payment process in order to enhance the checkout experience.
+
+* Support Continuous Improvement:
+    * With the help of Agile methodologies to help deliver quality features and enhancement
+
+* Performance and accessibility: 
+    * Ensuring fine-tuning the website for faster loading times and fast responses to user actions
+    * Making sure accessibility standards are met for an inclusive user experience.
+
+* Admin/ Site owner to user/customer Engagment:
+    * Create avenues for users to provide feedback, report issues and possible enhancement suggestion
+    * Responding to user feedback as the site owner and work on intergrating improvements where appropriate.
+
+## Target Audience
+
+* Casual Shoppers
+* Jewellery enthusiast
+* Gift givers
 
 The purpose of Jewelry Palace is to cater to jewellery enthusiast who value unique, small-boutique still products and a premium shopping experience. This platform is designed for:
 
@@ -31,11 +59,11 @@ By addressing these needs, Jewelry Palace aims to bridge the gap between boutiqu
 
 [Back to Top ⇧](#jewelry-palace)
 
-## UX User Experience
+# UX User Experience
 
 User stories are usually short, simple descritpions of a feature or functionally told from the perspective of the user. The user help ensures the development process remains user-focused. Below are the user stories created for this project:
 
-### User stories
+## User stories
 
 * As a user, I can browse the product categories in order to find what I am looking for [#1](https://github.com/KyrianU/Jewelry_palace/issues/1)
 * As a user, I want to be able to search for a product by name in order to locate specific items with ease [#3](https://github.com/KyrianU/Jewelry_palace/issues/3)
@@ -69,6 +97,28 @@ User stories are usually short, simple descritpions of a feature or functionally
 * As a returning user, I can securely leave my shipping details so that any future purchases can be made faster.
 
 
+# Planing
+
+## Agile Methodology
+
+### Overview
+
+Agile methodology is a project management approach that focuses on teamwork, flexibility, making steady progress towards a clear objective. Agile methodology strive to deliver small, incremental product updates which enhance the quality and also allows for quick adaptation to changing needs.
+
+### MoSCow Prioritization
+
+The MoSCow prioritization technique is a framework for assessing the importance of different features and task within a project. It ranks items into four categories: Must Have, Should Have, Could Have and Won't have. This approach helps with time management by making sure that the most important features are priortised and completed first.
+
+### GitHub Projects
+
+Github projects provides a way to to manage tasks and monitor ongoing progress using project boards. Each colums tracks the status of tasks, ranging from 'To Do', 'In Progress' and 'Done. This approach helps with time management by ensuring that the most important tasks are prioritised and completed first
+
+<details>
+  <summary>GitHub Project</summary>
+
+  ![](docs/github-project.png)
+
+  </details>
 
 ## Testing
 
