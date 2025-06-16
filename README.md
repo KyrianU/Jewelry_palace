@@ -178,3 +178,26 @@ The Category table is highlights what category the products listed on the websit
 The Order model contains information in relation to a customer's final order. It has the following field Primary Key Id, order_number, user_profile, full_name, email, phone_number, country, postcode, county, town_or_city, street_address1, street_address2, date, grand_total, order_total, delivery_cost, original_bag, stripe_pid and user_profile_id.
 
 The OrderlineItem table contains information in regards to an order. It has the following fields Primary Key Id, product_size, quantity, lineitem_total, order_id and product_id.
+
+# Design
+
+## Wireframes
+
+The wireframes for the website provides a visual representation of the layout and structure of the website.
+They outline the placements of where the key elements will go (i.e navigation menus, user profiles, main content area and any interactive features). Although the wireframes ensures a cohesive and intuitive user interface, the final live version deviates contains some slight deviation to what is on the wireframes
+
+<details>
+  <summary>Wireframes</summary>
+
+  ![](docs/Wireframes/wireframe1.png)
+  ![](docs/Wireframes/wireframe2.png)
+  ![](docs/Wireframes/wireframe3.png)
+  ![](docs/Wireframes/wireframe4.png)
+  ![](docs/Wireframes/wireframe5.png)
+  ![](docs/Wireframes/wireframe6.png)
+  ![](docs/Wireframes/wireframe7.png)
+  ![](docs/Wireframes/wireframe8.png)
+  ![](docs/Wireframes/wireframe9.png)
+  ![](docs/Wireframes/wireframe10.png)
+
+  </details>
