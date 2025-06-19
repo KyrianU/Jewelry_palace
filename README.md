@@ -163,6 +163,7 @@ The Database scheme for Jewelry Palace is designed to efficiently all of the cor
 
   </details>
 
+
 7 Tables was created for the Wesbite. Order, OrderLineItem, Review, Contact, Product, Category and UserProfile
 
 The Contact table is used by users to submit queries that they may have, ranging from general inquiries, Returns, Order, Feedback, Availability and any oher adhoc queries. It has the following fields of Primary Key ID, name, email, subject and body.
@@ -201,3 +202,9 @@ They outline the placements of where the key elements will go (i.e navigation me
   ![](docs/Wireframes/wireframe10.png)
 
   </details>
+
+
+## Typography
+
+Roboto Condensed is the primary font taken from Google Fonts. The primary reason for this fonts was for its geometric font which features friendly and open curves. Fall back fonts are Lato and sans-serif.
+
