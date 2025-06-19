@@ -208,3 +208,21 @@ They outline the placements of where the key elements will go (i.e navigation me
 
 Roboto Condensed is the primary font taken from Google Fonts. The primary reason for this fonts was for its geometric font which features friendly and open curves. Fall back fonts are Lato and sans-serif.
 
+## Color Palette 
+
+I chose the color combination below for the app as I believe it was the best set of colors to represent a jewellery website.
+
+<details>
+  <summary>Color Palette</summary>
+
+  ![](docs/colors.png)
+
+  </details>
+
+The main colors used in the project are:
+
+  - FFD700 (Gold): Used for the heading and product outline. The gold color evokes elegance and wealth. I felt that the color aligned itself perfectly with what a jewellery website and instantly signals premium quality.
+
+  - 000000 (Black): Used for the Naviation bars, the footer, some buttons. The black went well with the gold and white as it provided a good contrast as well as helping the gold and white pop out without overpowering them. 
+
+  - FFFFFF (White): The white keeps the design of the site clean and very easy to navigate. It also provides breathing spaces and enhances redability.
