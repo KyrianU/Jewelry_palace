@@ -226,3 +226,10 @@ The main colors used in the project are:
   - 000000 (Black): Used for the Naviation bars, the footer, some buttons. The black went well with the gold and white as it provided a good contrast as well as helping the gold and white pop out without overpowering them. 
 
   - FFFFFF (White): The white keeps the design of the site clean and very easy to navigate. It also provides breathing spaces and enhances redability.
+
+# Features
+
+## Header 
+
+The navigation bar is the same across all the pages, this was design for the purpose of providing the users with a familiar layout, which allows them to focus on the content of each page. The logo is situated at the top left hand side of the, it is also acting as a home page link. The navigation bar includes a collapsable profile menu with changing options depending on whether the user is logged in not logged in, or whether the user is a site admin. The navigation bar includes a search field for product searches.
+The header includes the main background image, which also features a welcome message across the home page.
