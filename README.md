@@ -268,3 +268,32 @@ The footer is the same across all the pages, this was designed for the purpose o
   ![](docs/footer.png)
 
   </details>
+
+
+### Home 
+
+The Homepage features a carousel just underneath the hero image. The carousel consists of 3 images. 
+
+
+<details>
+  <summary>Carousel 1</summary>
+
+  ![](docs/carousel.png)
+
+  </details>
+
+
+<details>
+  <summary>Carousel 2</summary>
+
+  ![](docs/carousel-2.png)
+
+  </details>
+
+
+<details>
+  <summary>Carousel 3</summary>
+
+  ![](docs/Carousel-3.png)
+
+  </details>
