@@ -17,12 +17,20 @@ h1 {
 }
 
 .hero-image {
-    background: linear-gradient(to right, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.1)),
-    url('/media/Homepage-chain-picture.jpg') no-repeat center center fixed;
+    background: url('/media/Homepage-chain-picture.jpg') no-repeat center center fixed;
     background-size: cover;
     height: calc(90vh - 164px);
     color: black;
 
+}
+
+.text-box {
+    background-color: rgba(0, 0, 0, 0.9);
+    border-radius: 12px;
+    padding: 1.5rem;
+    display: inline-block;
+    color: gold;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
 }
 
 .carousel-inner {
@@ -78,8 +86,8 @@ h1 {
 .btn-black:hover,
 .btn-black:active,
 .btn-black:focus {
-    background: #222;
-    color: white;
+    background: #ffd700;
+    color: black;
 }
 
 .text-black {
