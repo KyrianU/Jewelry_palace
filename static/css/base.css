@@ -58,7 +58,7 @@ h1 {
 
 .shop-now-button {
     background: black;
-    color: white;
+    color: #ffd700;
     min-width: 260px;
 }
 
@@ -77,7 +77,7 @@ h1 {
 .btn-outline-black:active,
 .btn-outline-black:focus {
     background: black;
-    color: white !important;
+    color: #fff !important;
 }
 
 .shop-now-button:hover,

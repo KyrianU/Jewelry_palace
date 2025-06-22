@@ -233,3 +233,26 @@ The main colors used in the project are:
 
 The navigation bar is the same across all the pages, this was design for the purpose of providing the users with a familiar layout, which allows them to focus on the content of each page. The logo is situated at the top left hand side of the, it is also acting as a home page link. The navigation bar includes a collapsable profile menu with changing options depending on whether the user is logged in not logged in, or whether the user is a site admin. The navigation bar includes a search field for product searches.
 The header includes the main background image, which also features a welcome message across the home page.
+
+<details>
+  <summary>Navigation Bar</summary>
+
+  ![](docs/navigation.png)
+
+  </details>
+
+
+<details>
+  <summary>Hero Image & Links</summary>
+
+  ![](docs/hero-image.png)
+
+  </details>
+
+
+<details>
+  <summary>Profile navigation</summary>
+
+  ![](docs/Logged-in.png)
+
+  </details>
