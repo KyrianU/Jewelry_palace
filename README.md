@@ -231,7 +231,7 @@ The main colors used in the project are:
 
 ## Header 
 
-The navigation bar is the same across all the pages, this was design for the purpose of providing the users with a familiar layout, which allows them to focus on the content of each page. The logo is situated at the top left hand side of the, it is also acting as a home page link. The navigation bar includes a collapsable profile menu with changing options depending on whether the user is logged in not logged in, or whether the user is a site admin. The navigation bar includes a search field for product searches.
+The navigation bar is the same across all the pages, this was designed for the purpose of providing the users with a familiar layout, which allows them to focus on the content of each page. The logo is situated at the top left hand side of the, it is also acting as a home page link. The navigation bar includes a collapsable profile menu with changing options depending on whether the user is logged in not logged in, or whether the user is a site admin. The navigation bar includes a search field for product searches.
 The header includes the main background image, which also features a welcome message across the home page.
 
 <details>
@@ -254,5 +254,17 @@ The header includes the main background image, which also features a welcome mes
   <summary>Profile navigation</summary>
 
   ![](docs/Logged-in.png)
+
+  </details>
+
+## Footer
+
+The footer is the same across all the pages, this was designed for the purpose of providing the users with a familiar layout, which allows them to focus on the content on each page. It follows the same color scheme as the navigation bars to provide the bottom frame of the content. The footer contains social media links (Facebook, Twitter and Instagram). The footer also contains business contact information. Finally, the footer also contains a simple newsletter signup field, which allows users to suscribe by entering their email address.
+
+
+<details>
+  <summary>Footer</summary>
+
+  ![](docs/footer.png)
 
   </details>
