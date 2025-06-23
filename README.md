@@ -323,4 +323,24 @@ The product detail page is where the user will find all relevant information abo
 
   </details>
 
-  
+
+### Basket 
+
+In the basket page, the users can see what products they have added to their basket. Users can see the total cost of their items, as well as being able to adjust the quantity of items they have in their basket. From the basket, users can then move onto the checkout page. There is a delivery fee for any orders under $50. The delivery fee is also visible on the basket page. Users will get notifications regarding how much more they have to spend in order for them to receive free shopping 
+
+
+<details>
+  <summary>Basket</summary>
+
+  ![](docs/basket.png)
+
+  </details>
+
+
+<details>
+  <summary>Basket</summary>
+
+  ![](docs/basket2.png)
+
+  </details>
+
