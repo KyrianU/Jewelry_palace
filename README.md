@@ -300,7 +300,8 @@ The Homepage features a carousel just underneath the hero image. The carousel co
 
 ### Product Page
 
-Each product is presented on a card. These cards have a hover effect (gold), this is to provide visual feedback to the user. When the product card, the user is then redirected to the product detail page. Products can be added to the basket from the product page. Logged in users have the option to view and leave product review whereas guest users can only view existing reviews.
+Each product is presented on a card. These cards have a hover effect (gold), this is to provide visual feedback to the user. When the product card, the user is then redirected to the product detail page. Products can be added to the basket from the product page. On the products page, items can be sorted according to price, rating, name and category.
+
 
 <details>
   <summary>Product List</summary>
@@ -308,3 +309,18 @@ Each product is presented on a card. These cards have a hover effect (gold), thi
   ![](docs/Product-list.png)
 
   </details>
+
+
+### Product detail 
+
+The product detail page is where the user will find all relevant information about a product. Clicking the image in the product page will redirect the user to the product detail page. Products can then be added to the bag up until the maximum quantity available. Logged in users have the option to view and leave product review whereas guest users can only view existing reviews.
+
+
+<details>
+  <summary>Product Detail</summary>
+
+  ![](docs/product-detail.png)
+
+  </details>
+
+  
