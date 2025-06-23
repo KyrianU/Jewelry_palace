@@ -245,7 +245,7 @@ The header includes the main background image, which also features a welcome mes
 <details>
   <summary>Hero Image & Links</summary>
 
-  ![](docs/hero-image.png)
+  ![](docs/heroimage.png)
 
   </details>
 
@@ -253,7 +253,7 @@ The header includes the main background image, which also features a welcome mes
 <details>
   <summary>Profile navigation</summary>
 
-  ![](docs/Logged-in.png)
+  ![](docs/loggedin.png)
 
   </details>
 
@@ -286,7 +286,7 @@ The Homepage features a carousel just underneath the hero image. The carousel co
 <details>
   <summary>Carousel 2</summary>
 
-  ![](docs/carousel-2.png)
+  ![](docs/carouselpt2.png)
 
   </details>
 
@@ -294,6 +294,17 @@ The Homepage features a carousel just underneath the hero image. The carousel co
 <details>
   <summary>Carousel 3</summary>
 
-  ![](docs/Carousel-3.png)
+  ![](docs/carouselpt3.png)
+
+  </details>
+
+### Product Page
+
+Each product is presented on a card. These cards have a hover effect (gold), this is to provide visual feedback to the user. When the product card, the user is then redirected to the product detail page. Products can be added to the basket from the product page. Logged in users have the option to view and leave product review whereas guest users can only view existing reviews.
+
+<details>
+  <summary>Product List</summary>
+
+  ![](docs/Product-list.png)
 
   </details>
