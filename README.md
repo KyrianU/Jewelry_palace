@@ -364,3 +364,31 @@ The checkout page contains a form for users to fill in before making their purch
   ![](docs/checkout-success.png)
 
   </details>
+
+
+### Profile
+
+
+On the profile page, users are able to view and update their personal information. On the right hand side of the page, users will see a history of their orders(order number, date, Items and order total). The Order number is a link that once clicked, takes you back to the checkout succesfull screen. 
+
+
+<details>
+  <summary>Profile</summary>
+
+  ![](docs/profile.png)
+
+  </details>
+
+
+### Contact Page
+
+The contact page contains multiple ways of getting in touch with the business. the address, email, and phone number is on the left hand side of the page whilst the contact form is on the right hand side of the page. The contact form allows the users to select a subject from the dropdown list
+
+
+<details>
+  <summary>Contact us</summary>
+
+  ![](docs/contact-us.png)
+
+  </details>
+
