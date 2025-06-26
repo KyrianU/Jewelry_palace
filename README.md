@@ -344,3 +344,23 @@ In the basket page, the users can see what products they have added to their bas
 
   </details>
 
+
+### Checkout
+
+The checkout page contains a form for users to fill in before making their purchases. Logged-in users can tick a box to save their entered information to their profile, this means that when the users logs back in, these will fields will be prepoulated with the information from their profile. Guest users will see a prompt to log in and create an account in order to save their information. The only payment option is currently Stripe. After the user has finished filling their personal details and credit card details, they will be greated with an order summary and a message to say that their order has been successfully processed. An order number will be generated and an email confirmation will be sent to the email address given.
+
+
+<details>
+  <summary>Checkout Form</summary>
+
+  ![](docs/checkout.png)
+
+  </details>
+
+
+<details>
+  <summary>Order confirmation</summary>
+
+  ![](docs/checkout-success.png)
+
+  </details>
