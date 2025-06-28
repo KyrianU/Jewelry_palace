@@ -97,6 +97,9 @@ User stories are usually short, simple descritpions of a feature or functionally
 * As a returning user, I can securely leave my shipping details so that any future purchases can be made faster.
 
 
+[Back to Top ⇧](#jewelry-palace)
+
+
 # Planing
 
 ## Agile Methodology
@@ -150,6 +153,9 @@ Footer | Social media links | clicking on social media icons in the footer open 
 Footer | Contact info | footer display clear contact info as to how to get in touch | Pass |
 
 
+[Back to Top ⇧](#jewelry-palace)
+
+
 # Database Structure 
 
 ## Entity Relationship Diagram
@@ -179,6 +185,10 @@ The Category table is highlights what category the products listed on the websit
 The Order model contains information in relation to a customer's final order. It has the following field Primary Key Id, order_number, user_profile, full_name, email, phone_number, country, postcode, county, town_or_city, street_address1, street_address2, date, grand_total, order_total, delivery_cost, original_bag, stripe_pid and user_profile_id.
 
 The OrderlineItem table contains information in regards to an order. It has the following fields Primary Key Id, product_size, quantity, lineitem_total, order_id and product_id.
+
+
+[Back to Top ⇧](#jewelry-palace)
+
 
 # Design
 
@@ -226,6 +236,10 @@ The main colors used in the project are:
   - 000000 (Black): Used for the Naviation bars, the footer, some buttons. The black went well with the gold and white as it provided a good contrast as well as helping the gold and white pop out without overpowering them. 
 
   - FFFFFF (White): The white keeps the design of the site clean and very easy to navigate. It also provides breathing spaces and enhances redability.
+
+
+[Back to Top ⇧](#jewelry-palace)
+
 
 # Features
 
@@ -430,3 +444,17 @@ Personalised terms and conditions created for Jewelry Palace. Just like the Priv
   ![](docs/terms-conditions.png)
 
   </details>
+
+
+### Future Features
+
+There a few features that could be implemented in the future to improve the site functionality and user experience:
+
+- Additional payment options
+- Gift cards
+- Promo codes when at checkout
+- contact form management function - main reply function when a user has sent an enquirty via the contact page 
+- newsletter unsuscribe function
+
+
+[Back to Top ⇧](#jewelry-palace)
