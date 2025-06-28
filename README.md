@@ -392,3 +392,15 @@ The contact page contains multiple ways of getting in touch with the business. t
 
   </details>
 
+
+### About us
+
+The about page gives the users a brief oversight of the what the website is all about and when it was founded. 
+
+
+<details>
+  <summary>Abous us</summary>
+
+  ![](docs/aboutus.png)
+
+  </details>
