@@ -404,3 +404,29 @@ The about page gives the users a brief oversight of the what the website is all 
   ![](docs/aboutus.png)
 
   </details>
+
+
+### Privacy Policy
+
+Privacy Policy informs users about how their data is being collected and processed. it is very transparent and easily accessible. 
+
+
+<details>
+  <summary>Privacy Policy</summary>
+
+  ![](docs/privacy-policy.png)
+
+  </details>
+
+
+### Terms and Conditions
+
+Personalised terms and conditions created for Jewelry Palace. Just like the Privacy Policy, it is very transparent and easily accessible. 
+
+
+<details>
+  <summary>Terms and conditions</summary>
+
+  ![](docs/terms-conditions.png)
+
+  </details>
