@@ -458,3 +458,40 @@ There a few features that could be implemented in the future to improve the site
 
 
 [Back to Top ⇧](#jewelry-palace)
+
+
+# Web Marketing 
+
+## Search Engine Optimisation (SEO)
+
+SEO is a very essential aspect of any website. To Ensure that Jewelry Palace ranks well on search engines like Google and attracts the right audience, Jewelry Palace uses advanced search engines Optimization techniques like the ones that will be mentioned below. 
+
+### Keyword search 
+
+Google keyword search was used to optimise web pages and content to increase ranking in search engines.
+
+### Social Media Marketing 
+
+Our Facebook page was launched in order to cultivate organic growth through community building and meaningful engagment with our target audience. One of the key advantages is that it's free and quick to set up, making it very accessible tool for any business. With Facebook's vast and diverse user base, the platform offers a valubale opportunity to reach a global demographic. The main goal of this Facebook page was build and maintain strong relationships with our target audience.
+
+
+<details>
+  <summary>Facebook Business Page</summary>
+
+  ![](docs/facebook.png)
+
+  </details>
+
+
+### Email Marketing
+
+
+We have implemented a newsletter sign up form that allows users to describe for exclusive offers and updates. The form is accessible on the footer element of app and its desgined to capture the user's email address. The way it works is that the users will enter their email address in the provided input field. After submission, the form sends a request to subscribe the user to the newsletter. Once that is done, a success message is displayed when the subscription is succesfull
+
+
+<details>
+  <summary>Newsletter Signup</summary>
+
+  ![](docs/newsletter-signup.png)
+
+  </details>
