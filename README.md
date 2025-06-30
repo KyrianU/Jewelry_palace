@@ -495,3 +495,18 @@ We have implemented a newsletter sign up form that allows users to describe for 
   ![](docs/newsletter-signup.png)
 
   </details>
+
+[Back to Top ⇧](#jewelry-palace)
+
+
+# Technologies Used
+
+## Languages
+
+* [HTML5](https://developer.mozilla.org/en-US/docs/Web/HTML)
+* [CSS3](https://developer.mozilla.org/en-US/docs/Web/CSS)
+* [Python](https://www.python.org/)
+* [Javascript](https://www.javascript.com/)
+
+## Frameworks, Libraries & Programs Used
+
