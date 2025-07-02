@@ -508,5 +508,37 @@ We have implemented a newsletter sign up form that allows users to describe for 
 * [Python](https://www.python.org/)
 * [Javascript](https://www.javascript.com/)
 
-## Frameworks, Libraries & Programs Used
+## Tools and Programs
 
+* [Amazon Web services S3](https://aws.amazon.com/s3/) was used to store static and media files
+* [Am I responsive](https://ui.dev/amiresponsive) was used to preview the site across multiple devices
+* [AliExpress](https://www.aliexpress.com/) was used to source most of the images on the site
+* [Balsamiq](https://balsamiq.com/) was used to create the wireframe for the app
+* [Chrome Devtool](https://developer.chrome.com/docs/devtools/) for Code review and test responsiveness
+* [Coloors](https://coolors.co/) was used to create a color scheme for the website
+* [Dbdiagram.io](https://dbdiagram.io/d) was used to visualise the structure and relationship between the pages
+* [Favicon](https://favicon.io/) was used to create the site Favicon
+* [Git](https://git-scm.com/) for version control by committing and pushing to GitHub.
+* [GitHub](https://github.com/) was used to store the project's code.
+* [Grammalry](https://www.grammarly.com/) was used to spell-check my Readme file.
+* [Heroku](https://www.heroku.com/) was used to deploy the website.
+* [Heroku Postgres](https://www.heroku.com/postgres/) database was used in production, as a service based on PostgreSQL.
+* [JSHint](https://jshint.com/) was used to validate the site's javascript code
+* [SQLite](https://sqlite.org/index.html) was used a single-file database during the development
+* [Stripe](https://stripe.com/en-nl) was used to process online payment.
+* [W3C CSS valiator](https://jigsaw.w3.org/css-validator/) was used to validate CCS code
+* [W3C Markup Validator](https://validator.w3.org/) was used to validate HTML code
+
+## Libraries, Framework and Packages
+
+* [Boostrap5](https://getbootstrap.com/) was used for the website to help with styling and responsiveness
+* [Django](https://www.djangoproject.com/) was used as the web framework
+* [Django Allauth](https://django-allauth.readthedocs.io/en/latest/) for user authentication, registration and account management.
+* [Django Countries](https://pypi.org/project/django-countries/) was used to provide country choices for forms and models
+* [Django Crispy Forms](https://django-crispy-forms.readthedocs.io/en/latest/) To control the rendering of forms
+* [Django Extensions](https://django-extensions.readthedocs.io/en/latest/index.html) To generate the ERD from django models
+* [Font Awesome](https://fontawesome.com/) was used in the website to add icons for better UX experience
+* [Google Fonts](https://fonts.google.com/) was used for the site typography
+* [Pexels](https://www.pexels.com/) was used to source some of the images on the website
+* [Privacy Policy Generator](https://www.privacypolicygenerator.info/) was used to generate the website privacy policy
+* [Terms and Condition Generator](https://www.termsandconditionsgenerator.com/) was used to create the wesbite terms and conditions.
