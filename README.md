@@ -542,3 +542,124 @@ We have implemented a newsletter sign up form that allows users to describe for 
 * [Pexels](https://www.pexels.com/) was used to source some of the images on the website
 * [Privacy Policy Generator](https://www.privacypolicygenerator.info/) was used to generate the website privacy policy
 * [Terms and Condition Generator](https://www.termsandconditionsgenerator.com/) was used to create the wesbite terms and conditions.
+
+[Back to Top ⇧](#jewelry-palace)
+
+
+# Deployment
+
+
+The project was deployed using Visual Code for writing code, GitHub for version control and Heroku for hosting the live project.
+
+## Github
+
+1. Create a Repository:
+
+    * Log in to your [Github Account](https://github.com/)
+    * Click on New Repository
+    * Provide a new name for your repository, adding a description is optional. Choose whether to make it
+      public or private domain
+    * Click create Repository
+
+2. Clone the Repository in Visual Code:
+
+    * Open Visual Code.
+    * Open the command (`Cmd + Shift + P` for mac or `Ctrl + Shift + P` on windows/Linux)
+    * Search for and select *Git: Clone*.
+    * Paste the repository URL and then select a folder to clone the repository
+
+3. Working on your code in Visual code:
+
+    * Opened the repository folder in *Visual Code*
+    * Make as many changes to your code as needed
+
+4. Commit and push changes:
+
+    * Go on the terminal tab
+    ``` bash
+        git add .
+        git commit -m "Description of the changes"
+        git push
+    ```
+
+## Heroku
+
+- Sign up or log in to your [Heroku account](https://www.heroku.com/).
+- Once you have created or logged in to your account, select *Create New App* from the heroku Dashboard.
+- Enter a unique app name and choose your preferred region
+- Click *Create App*
+
+- To set up Environemnt variables, go to *Settings* tab of your Heroku Dashboard
+- Click on *Reveal Config Vars* and add the following environemnt variables:
+
+
+Variable | Key
+--- | ---
+DATABASE_URL | your_database_url
+EMAIL_HOST_PASS | your_app_password_from_your_email
+EMAIL_HOST_USER | your_email_address
+SECRET_KEY | your_secret_key
+STRIPE_PUBLIC_KEY | your_stripe_public_key
+STRIPE_SECRET_KEY | your_stripe_secret_key
+
+- To prepare for the project to be deployed, open the terminal in *Visual Code* and ensure `gunicorn` and `psycopg2` are installed:
+
+```bash
+   pip3 install gunicorn
+   pip3 install psycogp2
+```
+
+  - Create a *Procfile* in the root of your project and add the following line:
+
+```plaintext
+web: gunicorn <project_name>.wsgi
+```
+
+  - Create a file name *python-version* in the root of your project and add the version of Python that you are using.
+
+  - update your *requirements.txt* file:
+```bash
+       pip3 freeze > requirements.txt
+```
+
+  - If you have any outstanding migrations to run and collect static files:
+```bash
+       python3 manage.py makemigrations
+       python3 manage.py migrate
+       python3 manage.py collectstatic
+```
+
+  - In your *settings.py* file, update your Debug settings:
+```plaintext
+DEBUG = FALSE
+```
+
+  - in your *settings.py* file, update your database configuration to:
+```plaintext
+if 'DATABASE_URL' in os.environ:
+    DATABASES = {
+        'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
+    }
+else:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        }
+    }
+```
+
+  - To push your code in *Heroku*, add a Heroku as a remote repository:
+```bash
+      heroku git:remote -a <app-name>
+```
+  - To push the code to Heroku
+```bash
+    git push heroku main
+```
+
+  - To Deploy the project on Heroku, go to deploy and specify deployment details.
+  - Select *Github* as the deployment method
+      - Connect to Github, find your repository and click *Connect*
+  - You can either select *Automatic Deploys* or *Manual Deploys* 
+  - Once the deployment is complete, your application will be live and it should look like this `https://<app-name>.herokuapp.com/.
