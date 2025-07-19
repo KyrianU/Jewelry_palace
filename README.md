@@ -697,3 +697,81 @@ json
   - Actions: `s3:GetObject`
   - ARN: Paste your bucket's ARN
 - Click *Add statement* and *Generate Policy*.
+- The Generated policy has to be pasted into the "Bucket Policy Editor"
+
+json 
+
+```bash
+      "Version": "2012-10-17",
+      "Statement": [
+        {
+          "Effect": "Allow",
+          "Principal": "*",
+          "Action": "s3.GetObject",
+          "Resource": "arn:aws:s3:::your-bucket-name/*"
+        }
+      ]
+```
+
+- To adjust the access Control List (ACL), go to the *Access Control List* section, click "Edit" and enable "List" for everyone (public access)
+- if the option to edit is disabled, make sure the "object ownership" settings have access control list enabled.
+
+- To configure IAM (*Identify and Access Management*)
+  - Create a User group:
+    - Navigate the IAM service and select *User Group*.
+    - Create New Group and name it appropriately (e.g, `group-jewelry-palace`)
+
+- To attach a policy to the Group
+  - Select the newly created group and go to *Permissions* tab.
+  - Click *Add Permissions* > *Attach Policies*
+  - In the Json tab, click Import managed Policy and search for `amazonS3FullAccess`.
+  - Import and modify policy
+
+  json
+
+```bash
+      "Version:" "2012-10-17",
+      "Statement": [
+        {
+          "Effect": "Allow",
+          "Action": "s3:*",
+          "Resource": [
+            "arn:aws:s3:::your-bucket-name",
+            "arn:aws:s3:::your-bucket-name/*"
+          ]
+        }
+      ]
+```
+
+ ### Install required packages:
+
+ Install `boto3` and `django-storages` packages.
+
+ ```bash
+        "pip3 install boto"
+        "pip3 install django-storages"
+```
+
+### Updata Django Settings
+
+- Add the following settings to your `settings.py` file
+
+```bash
+      "# Bucket config
+    AWS_STORAGE_BUCKET_NAME = '<your-bucket-name>'
+    AWS_S3_REGION_NAME = '<your-region>' # e.g., 'us-east-1'
+    AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
+    AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
+    AWS_S3_CUSTOM_DOMAIN = f'{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com'
+
+    # Static and media Files
+    STATICFILES_STORAGE = 'custom_storages.StaticStorage'
+    STATICFILES_LOCATION = 'static'
+    DEFAULT_FILE_STORAGE = 'custom_storages.MediaStorage'
+    MEDIAFILES_LOCATION = 'media'
+
+    # Override static and media URLS in production
+
+    STATIC_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{STATICFILES_LOCATION}/'
+    MEDIA_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{MEDIAFILES_LOCATION}/'"
+```
