@@ -663,3 +663,37 @@ else:
       - Connect to Github, find your repository and click *Connect*
   - You can either select *Automatic Deploys* or *Manual Deploys* 
   - Once the deployment is complete, your application will be live and it should look like this `https://<app-name>.herokuapp.com/.
+
+
+### AWS Account
+
+- Create an account in [AWS](https://aws.amazon.com/) and create an account if you don't already have one.
+- Once you have logged in, navigate to the *AWS Management Console*
+
+- Create an *S3 Bucket*. In the AWS management console, searchf for *S3* in the search bar and click on it
+- Click the *Create Bucket* button
+- Name the bucket to match the Heroku app name and select the region closest to your target audience.
+- Uncheck the *Block all public access* option and acknowlegde tha the bucket will be public (required for compatibility with Heroku)
+- Under *Object Ownership* ensure *ACLs enabled* and *Bucket owner preferred* are selected.
+
+- To Enable Static Website Hosting, you have to enable static website hosting in the *Properties* tab
+- Set `index.html` as the index document and `error.html` as the error document, once that's done click *save*.
+
+- To configure CORS (Cross-Origin Resource Sharing), go to the permission tab and add the following CORS configuration:
+
+json
+
+```bash
+        [ { "AllowedHeaders": ["Authorisation], "AllowedMethods": ["GET"], "AllowedOrigins": ["*"], "ExposeHeaders": [] } ]
+```
+
+- Copy your bucket's ARN (Amazon Resource Name).
+
+- To add a bucket policy, go to "Bucket Policy" tab and click on the "Policy Generator" link.
+- Configure the policy:
+  - Policy Type: S3 Bucket Policy
+  - Effect: Allow
+  - Principal: *
+  - Actions: `s3:GetObject`
+  - ARN: Paste your bucket's ARN
+- Click *Add statement* and *Generate Policy*.
