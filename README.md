@@ -499,6 +499,49 @@ We have implemented a newsletter sign up form that allows users to describe for 
 [Back to Top ⇧](#jewelry-palace)
 
 
+## Stripe 
+
+Jewelry Palace uses Stripe as a primary payment gateway to process e-commerce transactions securely. 
+
+### Steps for Stripe Intergrations:
+
+1. Create a stripe account 
+
+  - Go to [stripe](https://stripe.com/en-nl) and create an account. Once that is done, log in to your Stripe Dashboard
+
+2. API Keys:
+
+  - From your stripe dashboard, locate the *API Key* section under *Developers.*
+  - Retrieve the following keys:
+      * STRIPE_PUBLIC_KEY: your publishable key that starts with `pk`
+      * STRIPE_SECRET_KEY: Your secret key that start with `sk`
+  - These keys will be essential to authenticate your application with Stripe.
+
+3. Webhooks configuration for Payment Events:
+
+  - In your dashboard:
+    * Navigate to *Developers* and select *Webhooks*
+    * Click *Add Endpoint.*
+    * Enter your Endpoint URL (for this instance) `https://jewelry-palace.herokuapp.com/checkout/wh/`
+    * Select *receive all events* 
+    * Click *Add Endpoint* to finish the process
+  - A new key will be generated:
+    * STRIPE_WH_SECRET: Your Webhook Signing secret will start with `wh.`
+
+### Testing Stripe Payments
+
+1. Test:
+
+  * Stripe provides a test mode to simulate payment transactions.
+  * The following details will be used for stripe test mode:
+    * Card Number: `4242 4242 4242 4242`
+    * Expiry Date: Any Valid Future Date e.g `12/25`
+    * CVC: Any Three Digit number e.g, `424`
+    * Other Fields: Use any value for other fields e.g `424`
+
+- Make sure all Stripe API Keys and Webhook Secrets are stored securely.
+
+
 # Technologies Used
 
 ## Languages
@@ -775,3 +818,34 @@ json
     STATIC_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{STATICFILES_LOCATION}/'
     MEDIA_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{MEDIAFILES_LOCATION}/'"
 ```
+
+- Ensure to include `storages` to your `INSTALLED_APPS` in `settings.py` file.
+
+### Update Heroku Config Vars:
+
+- Add the following environment variable to your Config vars In Heroku:
+
+Variable | Key
+--- | ---
+AWS_ACCESS_KEY_ID | your_access_key_id_from_AWS
+AWS_SECRET_ACCESS_KEY | your_secret_access_key_from_AWS
+USE_AWS | TRUE
+
+- Remove `DISABLE_COLLECTSTATIC` from Heroku Config vars 
+
+- Create a `custom_storages.py` and add the following
+
+```bash
+      "from django.conf import settings
+       from storages.backends.s3boto3 import S3Boto3Storage
+
+
+      class StaticStorage(S3Boto3Storage):
+      location = settings.STATICFILES_LOCATION
+
+
+      class MediaStorage(S3Boto3Storage):
+      location = settings.MEDIAFILES_LOCATION"
+```
+
+When this is deployed, Heroku will run `python3 manage.py collectstatic` in the building process. The Static files will then be collected into a static folder in our s3 bucket.
