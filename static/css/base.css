@@ -100,7 +100,7 @@ h1 {
 
 .bg-gold {
     background: gold !important;
-    color: #000 important;
+    color: #000;
 }
 
 .overlay {
@@ -181,7 +181,7 @@ nav {
 /* Allauth form formatting */
 
 .allauth-form-inner-content p {
-    margin-top: 1.5 rem; /* mt-4 */
+    /*margin-top: 1.5 rem; /* mt-4 */
     color: #6c757d; /* text-secondary */
 }
 
