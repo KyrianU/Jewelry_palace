@@ -49,12 +49,39 @@ JS code in products.html | No errors | <details><summary>Validation Screenshot</
 
 [PEP8 Online Check ](https://pep8ci.herokuapp.com/) Was used to validate the python codes
 
-#### About
+#### Bag
 
-Tested | Results | Screenshot | Pass
+Tested | Results | Screenshot | Pass/Fail
 --- | --- | --- | ---
 bag/apps.py | No errors | <details><summary>Validation Screenshot</summary>![](docs/testing.md/bagapps.png) </details> | Pass
 context/apps.py | No errors | <detials><summary>Validation Screenshot</summary>![](docs/testing.md/bagcontext.png) </details> | Pass
 bag/urls.py | No errors | <details><summary>Validation Screenshot</summary>![](docs/testing.md/bagurls.png) </details> | Pass
 bag/views.py | No errors | <details><summary>Validation Screenshot</summary>![](docs/testing.md/bagsviews.png) <d/etails> | Pass
 bags/bags_tools.py | No errors | <details><summary>Validation Screenshot</summary>![](docs/testing.md/bagstools.png) </details> | Pass
+
+
+#### Checkout
+
+Tested | Results | Screenshot | Pass/Fail
+--- | --- | --- | ---
+Checkout/admin.py | No errors | <details><summary>Validation Screenshot</summary>![](docs/testing.md/checkoutadmin.png) </details> | Pass
+Checkout/apps.py | No errors | <details><summary>Validation Screenshot</summary>![](docs/testing.md/checkoutapp.png) </details> | Pass
+Checkout/form.py | No errors | <details><summary>Validation Screenshot</summary>![](docs/testing.md/checkoutform.png) </details> | Pass
+Checkout/models.py | No errors | <details><summary>Validation Screenshot</summary>![](docs/testing.md/checkoutmodels.png) </details> | Pass
+Checkout/signals.py | No errors | <details><summary>Validation Screenshot</summary>![](docs/testing.md/checkoutsignals.png) </details> | Pass
+Checkout/urls.py | No errors | <details><summary>Validation Screenshot</summary>![](docs/testing.md/checkouturls.png) </details> | Pass
+Checkout/views.py | No errors | <details><summary>Validation Screenshot</summary>![](docs/testing.md/checkoutviews.png) </details> | Pass
+Checkout/webhook_handler.py | No errors | <details><summary>Validation Screenshot</summary>![](docs/testing.md/checkoutwbhhandler.png) </details> | Pass
+Checkout/webhooks.py | No errors | <details><summary>Validation Screenshot</summary>![](docs/testing.md/checkoutWh.png) </details> | Pass
+
+
+#### Contact 
+
+Tested | Results | Screenshot | Pass/Fail
+--- | --- | --- | ---
+Contact/admin.py | No errors | <details><summary>Validaton Screenshot</summary>![](docs/testing.md/contactadmin.png) </details> | Pass
+Contact/apps.py | No errors | <details><summary>Validation Screenshot</summary>![](docs/testing.md/contactsapp.png) </details> | Pass
+Contact/forms.py | No erros | <details><summary>Validation Screenshot</summary>![](docs/testing.md/contactsforms.png) </details> | Pass
+Contact/models.py | No errors | <details><summary>Validation Screenshot</summary>![](docs/testing.md/Contactmodels.png) </details> | Pass
+Contact/urls.py | No erros | <details><summary>Validation Screenshot</summary>![](docs/testing.md/contacturls.png) </details> | Pass
+Contact/views.py | No erros | <details><summmary>Validation Screenshot</summary>![](docs/testing.md/contactviews.png) </details> | Pass
