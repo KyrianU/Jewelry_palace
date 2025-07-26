@@ -43,4 +43,18 @@ countryfield.js | No errors | <details><summary>Validation screenshot</summary>!
 stripe-elements.js | No erros | <details><summary>Validation Screenshot</summary>![](docs/testing.md/Stripe-elements.png) </details> | Pass
 JS code in bag.html | No errors | <details><summary>Validation Screenshot</summary>![](docs/testing.md/bagHtmlJS.png) </details> | Pass
 JS code in quantity_input_script.html | No errors | <details><summary>Validation Screenshot</summary>![](docs/testing.md/Quantity-inputJs.png) </details> | Pass
-JS code in products.html | No errors | <details><summmary>Validation Screenshot</summary>![](docs/testing.md/ProductsJS.png) </details> | Pass
+JS code in products.html | No errors | <details><summary>Validation Screenshot</summary>![](docs/testing.md/ProductsJS.png) </details> | Pass
+
+### Python Validation 
+
+[PEP8 Online Check ](https://pep8ci.herokuapp.com/) Was used to validate the python codes
+
+#### About
+
+Tested | Results | Screenshot | Pass
+--- | --- | --- | ---
+bag/apps.py | No errors | <details><summary>Validation Screenshot</summary>![](docs/testing.md/bagapps.png) </details> | Pass
+context/apps.py | No errors | <detials><summary>Validation Screenshot</summary>![](docs/testing.md/bagcontext.png) </details> | Pass
+bag/urls.py | No errors | <details><summary>Validation Screenshot</summary>![](docs/testing.md/bagurls.png) </details> | Pass
+bag/views.py | No errors | <details><summary>Validation Screenshot</summary>![](docs/testing.md/bagsviews.png) <d/etails> | Pass
+bags/bags_tools.py | No errors | <details><summary>Validation Screenshot</summary>![](docs/testing.md/bagstools.png) </details> | Pass
