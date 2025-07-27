@@ -81,7 +81,27 @@ Tested | Results | Screenshot | Pass/Fail
 --- | --- | --- | ---
 Contact/admin.py | No errors | <details><summary>Validaton Screenshot</summary>![](docs/testing.md/contactadmin.png) </details> | Pass
 Contact/apps.py | No errors | <details><summary>Validation Screenshot</summary>![](docs/testing.md/contactsapp.png) </details> | Pass
-Contact/forms.py | No erros | <details><summary>Validation Screenshot</summary>![](docs/testing.md/contactsforms.png) </details> | Pass
+Contact/forms.py | No errors | <details><summary>Validation Screenshot</summary>![](docs/testing.md/contactsforms.png) </details> | Pass
 Contact/models.py | No errors | <details><summary>Validation Screenshot</summary>![](docs/testing.md/Contactmodels.png) </details> | Pass
-Contact/urls.py | No erros | <details><summary>Validation Screenshot</summary>![](docs/testing.md/contacturls.png) </details> | Pass
-Contact/views.py | No erros | <details><summmary>Validation Screenshot</summary>![](docs/testing.md/contactviews.png) </details> | Pass
+Contact/urls.py | No errors | <details><summary>Validation Screenshot</summary>![](docs/testing.md/contacturls.png) </details> | Pass
+Contact/views.py | No errors | <details><summmary>Validation Screenshot</summary>![](docs/testing.md/contactviews.png) </details> | Pass
+
+
+#### Home
+
+Tested | Results | Screenshot | Pass
+--- | --- | --- | ---
+Home/apps.py | No errors | <details><summary>Validation Screenshot</summary>![](docs/testing.md/homeapps.png) </details> | Pass
+Home/urls.py| No errors | <details><summary>Validation Screenshot</summary>![](docs/testing.md/homeurls.png) <details> | Pass
+Home/views.py | No errors | <details><summary>Validation Screenshot</summary>![](docs/testing.md/homeviews.png) </details> 
+
+
+#### Jewelry_palace
+
+Tested | Results | Screenshot | Pass
+--- | --- | --- | ---
+Jewelry_palace/settings.py | No errors | <details><summary>Validation Screenshot</summary>![](docs/testing.md/jewelrysettings.png) </details> | Pass
+Jewelry_palace/urls.py | No errors | <details><summary>Valiation Screenshot</summary>![](docs/testing.md/jewelrypalaceurls.png) <details> | Pass
+Jewelry_palace/views.py | No errors | <details><summary>Validation Screenshot</summary>![](docs/testing.md/jewelryviews.png) </details> | Pass
+Jewelry_palace/wsgi.py | No errors | <details><summary>Validation Screenshot<summary>![](docs/testing.md/jewelrywsgi.png) </details> | Pass
+
