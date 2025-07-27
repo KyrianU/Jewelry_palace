@@ -54,7 +54,7 @@ JS code in products.html | No errors | <details><summary>Validation Screenshot</
 Tested | Results | Screenshot | Pass/Fail
 --- | --- | --- | ---
 bag/apps.py | No errors | <details><summary>Validation Screenshot</summary>![](docs/testing.md/bagapps.png) </details> | Pass
-context/apps.py | No errors | <detials><summary>Validation Screenshot</summary>![](docs/testing.md/bagcontext.png) </details> | Pass
+context/apps.py | No errors | <details><summary>Validation Screenshot</summary>![](docs/testing.md/bagcontext.png) </details> | Pass
 bag/urls.py | No errors | <details><summary>Validation Screenshot</summary>![](docs/testing.md/bagurls.png) </details> | Pass
 bag/views.py | No errors | <details><summary>Validation Screenshot</summary>![](docs/testing.md/bagsviews.png) <d/etails> | Pass
 bags/bags_tools.py | No errors | <details><summary>Validation Screenshot</summary>![](docs/testing.md/bagstools.png) </details> | Pass
@@ -84,7 +84,7 @@ Contact/apps.py | No errors | <details><summary>Validation Screenshot</summary>!
 Contact/forms.py | No errors | <details><summary>Validation Screenshot</summary>![](docs/testing.md/contactsforms.png) </details> | Pass
 Contact/models.py | No errors | <details><summary>Validation Screenshot</summary>![](docs/testing.md/Contactmodels.png) </details> | Pass
 Contact/urls.py | No errors | <details><summary>Validation Screenshot</summary>![](docs/testing.md/contacturls.png) </details> | Pass
-Contact/views.py | No errors | <details><summmary>Validation Screenshot</summary>![](docs/testing.md/contactviews.png) </details> | Pass
+Contact/views.py | No errors | <details><summary>Validation Screenshot</summary>![](docs/testing.md/contactviews.png) </details> | Pass
 
 
 #### Home
@@ -93,7 +93,7 @@ Tested | Results | Screenshot | Pass
 --- | --- | --- | ---
 Home/apps.py | No errors | <details><summary>Validation Screenshot</summary>![](docs/testing.md/homeapps.png) </details> | Pass
 Home/urls.py| No errors | <details><summary>Validation Screenshot</summary>![](docs/testing.md/homeurls.png) <details> | Pass
-Home/views.py | No errors | <details><summary>Validation Screenshot</summary>![](docs/testing.md/homeviews.png) </details> 
+Home/views.py | No errors | <details><summary>Validation Screenshot</summary>![](docs/testing.md/homeviews.png) </details> | Pass
 
 
 #### Jewelry_palace
@@ -103,5 +103,17 @@ Tested | Results | Screenshot | Pass
 Jewelry_palace/settings.py | No errors | <details><summary>Validation Screenshot</summary>![](docs/testing.md/jewelrysettings.png) </details> | Pass
 Jewelry_palace/urls.py | No errors | <details><summary>Valiation Screenshot</summary>![](docs/testing.md/jewelrypalaceurls.png) <details> | Pass
 Jewelry_palace/views.py | No errors | <details><summary>Validation Screenshot</summary>![](docs/testing.md/jewelryviews.png) </details> | Pass
-Jewelry_palace/wsgi.py | No errors | <details><summary>Validation Screenshot<summary>![](docs/testing.md/jewelrywsgi.png) </details> | Pass
+Jewelry_palace/wsgi.py | No errors | <details><summary>Validation Screenshot</summary>![](docs/testing.md/jewelrywsgi.png) </details> | Pass
 
+
+#### Product 
+
+Tested | Results | Screenshot | Pass
+--- | --- | --- | ---
+products/admin.py | No errors | <details><summary>Validation Screenshot</summary>![](docs/testing.md/productsadmin.png) </details> | Pass
+Products/apps.py | No errors | <details><summary>Validation Screenshot</summary>![](docs/testing.md/productsapp.png) </details> | Pass
+Products/forms.py | No errors | <details><summary>Validation Screenshot</summary>![](docs/testing.md/productsform.png) </details> | Pass
+Products/models.py | No errors | <details><summary>Validation Screenshot</summary>![](docs/testing.md/productsmodel.png) </details> | Pass
+Products/urls.py | No errors | <details><summary>Validation Screenshot</summary>![](docs/testing.md/productsurls.png) </details> | Pass
+Products/views.py | No errors | <details><summary>Validation Screenshot</summary>![](docs/testing.md/productsviews.png) <details> | Pass
+Products/widgets.py | No errors | <details><summary>Validation Screenshot</summary>![](docs/testing.md/productswidget.png) </details> | Pass
