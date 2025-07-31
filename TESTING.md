@@ -205,3 +205,12 @@ Payment successfull | 4242 4242 4242 4242 | 424 | 12/25 | Payment success | Paym
 Payment card declined | 4000 0000 0000 0002 | 424 | 12/25 | Payment fails | Error | Pass
 Payment card expired | 4242 4242 4242 4242 | 424 | 12/24 | Card expired | Error | Pass
 
+# Device and Browser Testing
+
+Browser | Outcome | Pass/Fail
+--- | --- | --- 
+Safari | No appearance or responsiveness issues | ✅ Pass
+Firefox | No appearance or responsiveness issues | ✅Pass
+Google Chrome | No appearance or responsiveness issues | ✅Pass
+Microsoft Edge | No appearance or responsiveness issues | ✅Pass
+ 
