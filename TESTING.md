@@ -4,6 +4,8 @@
 
 ### HTML
 
+[W3C Markup Validator](https://validator.w3.org/nu/) was used to Validate the HTML code for each html file. HTML was performed via source code text input
+
 Page | Result | Screenshot | Pass/Fail
 --- | --- | --- | ---
 About | No errors or warnings to show | <details><summary>Validation Screenshot</summary>![](docs/testing.md/Sucess-massage.png) </details> | Pass
@@ -29,13 +31,17 @@ Checkout success | No errors or warning to show | <details><summary>Validation S
 
 ### CSS Validation
 
+[W3C CSS Validator](https://jigsaw.w3.org/css-validator/) Was used to validate the CSS files.
+
 Tested | Result | Screenshot | Pass
 --- | --- | --- | ---
 checkout.css | No errors or warnings to show | <details><summary>Validation Screenshot</summary>![](docs/testing.md/CSS-success.png) </details> | Pass
 profile.css | No errors or warnins to show | <details><summary>Validation Screenshot</summary>![](docs/testing.md/CSS-success.png) </details> | Pass
 base.css | No errors or warnings to show | <details><summary>Validation Screenshot</summary>![](docs/testing.md/CSS-success.png) </details> | Pass
 
-### Javascript Validation 
+### Javascript Validation
+
+[JSHint](https://jshint.com/) Was used to validate the custom Javascript code.
 
 Tested | Result | Screenshot | Pass 
 --- | --- | --- | ---
@@ -127,3 +133,75 @@ Profiles/forms.py | No erros | <details><summary>Validation Screenshot</summary>
 Profiles/models.py | No errors | <details><summary>Validation Screenshot</summary>![](docs/testing.md/profilesmodels.png) </details> | Pass
 profiles/urls.py | No errors | <details><summary>Validation Screenshot</summary>![](docs/testing.md/profilesurls.png) </details> | Pass
 Profiles/views.py | No errors | <details><summary>Validation Screenshot</summary>![](docs/testing.md/profilesviews.png) </details> | Pass
+
+
+# Manual Testing
+
+| Feature | Test  | Expected Results  | Actual Result |
+|---------|------|------------------| :----:|
+| Jewelry Palace logo | Selecting Jewelery Palace on homepage | direct user to homepage | Pass  |
+| Navigation Links | Selecting navigation links  | directs users to relevant categories | Pass  |
+| All categories  | Selecting all for each category  | directs users to show all relevant categories on the same page |  Pass  |
+| Sort by  | Selecting the filter sort by for each category | Successfully alters by price, rating, category and name | Pass |
+| About us | Selecting About us | directs users to the about us Page | Pass  |
+| Privacy Policy  | Selecting Privacy Policy | directs users to the about page | Pass |
+| Terms % conditions | Selecting Terms and condition | directs users to the terms and condition page | pass  |
+| Register  | Register for an account  | selecting Register in my account directs users to accounts/login/ signup page  | Pass |
+| Login  | Login to account | Selecting login in my account directs user to accounts/login page | Pass
+| Back to top  | Back to top box  | Selecting the back to top on the products pages brings the user back to the top of the page | Pass
+| New User  |  Registering as a new user | Registering as a new user via form validation | Pass
+| Admin  | Loggin in as admin/superuser  | Logging in as superuser/ admin directs the the user to the admin page, where the admin has access to product management page  | Pass
+| login successfull message | login success | successfully signed in as {user.name} | Pass  |
+| Add product  | adding a new product  |  Adding a new product on the product managemment page successfully  |  Pass  |
+| Edit product | Editing a product | Editing a product on the product management page sucessfully |Pass |
+| Delete Product| Deleting a product|Deleting a product on the product management page sucessfully| Pass |
+|Logout | logging out and redirect  | logging out as a user / admin directs user to homepage | Pass |
+|Logout message | logout message shown | You have succesfully signed out message shown to the user once successfully signed out | Pass  |
+Footer | Social media links | clicking on social media icons in the footer open the link in a new tab | Pass |
+Footer | Contact info | footer display clear contact info as to how to get in touch | Pass |
+
+
+# Form Testing
+
+## Contact form Validation
+
+Field | Test input | Expected Result | Result | Pass
+--- | --- | --- | --- | --- 
+Name | Empty field | "Please fill empty fields" | Error shown | Pass
+Name | "Dave Best" | Valid name | No errors | Pass
+Email | 'invalid email' | invalid format | error shown | Pass
+Email | test1@hotmail.com | valid email | No errors | Pass
+Body | Empty Field | "Please fill empty fiels" | Error shown | Pass
+Body | Valid Message | Message accepted| No errors | Pass
+
+## Checkout Form Validation 
+
+Field | Test Input | Expected Results | Actual Result | Pass/Fail
+--- | --- | --- | --- | --- |
+Full Name | Empty Field | Error | Error Shown | Pass
+Phone | Invalid format | Error | Error shown | Pass
+Email | Invalid Format | Error | Error shown | Pass
+Address | Empty Field | Error | Error shown | Pass
+Country | Empty Field | Error | Error shown | Pass
+
+## Payment Process Testing
+
+Stage | Action | Expectation | Result | Pass
+--- | --- | --- | --- | --- |
+1 | Add items to basket | Basket total calculated | Correct total | Pass
+2 | Proceed to checkout | Checkout form displayed, to be filled | Form loads successfully | Pass
+3 | Enter shipping details | Form validation functions | Form validation | Pass
+4 | Enter paying details | stripe elements loads with no issue | stripe loads | Pass
+5 | Payment submittion | payment processed | Payment processing works | Pass
+6 | Order confirmation | Order confirmation page shown | Confirmation page displayed | Pass
+7 | Email confirmation | Confirmation email sent | Confirmation email received | Pass 
+
+
+## Stripe Payment Test
+
+Test | Card number | CVV | Expiry Date | Expected Results | Actual Results | Pass
+--- | --- | --- | --- | --- | --- | ---  
+Payment successfull | 4242 4242 4242 4242 | 424 | 12/25 | Payment success | Payment processed | Pass
+Payment card declined | 4000 0000 0000 0002 | 424 | 12/25 | Payment fails | Error | Pass
+Payment card expired | 4242 4242 4242 4242 | 424 | 12/24 | Card expired | Error | Pass
+
