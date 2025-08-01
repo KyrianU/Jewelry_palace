@@ -160,6 +160,26 @@ Profiles/views.py | No errors | <details><summary>Validation Screenshot</summary
 Footer | Social media links | clicking on social media icons in the footer open the link in a new tab | Pass |
 Footer | Contact info | footer display clear contact info as to how to get in touch | Pass |
 
+## Search & sort functionality
+
+Element | Expected | Pass/Fail 
+--- | --- | ---
+Search Bar | Users can search for products using keywords | ✅Pass 
+Search Bar | Search results are displayed correctly | ✅Pass
+Search Bar | Message saying *0 Products* is displayed if no results are found | ✅Pass
+Sort Options | allows sorting products by categories, price, rating and name | ✅Pass
+
+## Product Listing
+
+Element | Expected | Pass/Fail
+--- | --- | ---
+Product List | Products are diplayed in a grid format | ✅Pass
+Product List | Products are listed in card format with name, price & rating | ✅Pass
+Product Card | Clicking on a product card redirects the user to the product detail page | ✅Pass
+Product Details | Product details (Name, Price, rating and description) | ✅Pass
+Add to basket | Adds the product selected to the basket | ✅Pass
+Quantity select | Allows the users to select the quantiy of product | ✅Pass
+Reviews Section | Displays all reviews for a product | ✅Pass
 
 # Form Testing
 
@@ -213,4 +233,5 @@ Safari | No appearance or responsiveness issues | ✅ Pass
 Firefox | No appearance or responsiveness issues | ✅Pass
 Google Chrome | No appearance or responsiveness issues | ✅Pass
 Microsoft Edge | No appearance or responsiveness issues | ✅Pass
- 
+
+
