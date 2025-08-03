@@ -235,3 +235,4 @@ Google Chrome | No appearance or responsiveness issues | ✅Pass
 Microsoft Edge | No appearance or responsiveness issues | ✅Pass
 
 
+
