@@ -170,6 +170,24 @@ The OrderlineItem table contains information in regards to an order. It has the 
 [Back to Top ⇧](#jewelry-palace)
 
 
+# E-Commerce Business Model
+
+Jewelry Palace is an online jewellery store that uses an e-commerce model to sell jewellery directly to customers via its website. The model is designed to provide a fluid and personalised shopping experience while accomodating to a diverse audience of jewellery lovers:
+
+Essentials components of the Jewelry Palace model include:
+
+  1. *Direct Business to Consumer Sales*: Jewelry Palace offers a variety of jewelleries direclty to the consumer (Avoiding wholesalers or retailers). This method allows for a more customsised shopping experience for the consumer and a higher profit margin.
+
+  2. *Diverse Product Range*: The wesbite has a variety of stocked jewellery, including rings, ring set, necklaces and bracelets. 
+
+  3. *Digital Marketing and SEO*: Jewelry Palace uses various digital marketing strategies which includes search engine optimization(SEO), social media engagment, newsletter campaign and content marketing. This is use to attract and retain customers.
+
+  4. *Target Audience*: 
+
+    - Primary: Jewellery enthusiast
+    - Secondary: Casual shoppers
+    - Geographic: Initially UK with the plan to expand Worldwide 
+
 # Design
 
 ## Wireframes
