@@ -465,6 +465,7 @@ There a few features that could be implemented in the future to improve the site
 - Promo codes when at checkout
 - contact form management function - main reply function when a user has sent an enquirty via the contact page 
 - newsletter unsuscribe function
+- Increase stock variety (i.e watches, earrings and anklets)
 
 
 [Back to Top ⇧](#jewelry-palace)
@@ -865,3 +866,4 @@ When this is deployed, Heroku will run `python3 manage.py collectstatic` in the 
 Bug | Status | Fix/Commit Notes
 --- | --- | ---
 footer in profile page not expanding to the whole width of the page | ✅ | missing `</div>` tag before the `{% block content %}` in profile.html template
+Carousel images showing as broken links on local & deployed site | ✅ | replaced `<img src="{{ MEDIA_URL }}staticfile>` to `<img src="{% static 'images/staticfile' %}">`
