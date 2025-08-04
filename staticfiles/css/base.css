@@ -1,0 +1,365 @@
+html {
+    height: 100%;
+}
+
+body {
+    /* background: linear-gradient(to right, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.1)),
+    url('/media/Homepage-chain-picture.jpg') no-repeat center center fixed; */
+    background-size: cover;
+    /* height: calc(100vh - 164px); */
+    color: black;
+    font-family: 'Roboto Condensed', 'Lato', 'sans-serif';
+}
+
+h1 {
+    color: white !important;
+    background-color: rgb(0, 0, 0) !important;
+}
+
+.hero-image {
+    background: url('/media/Homepage-chain-picture.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: calc(90vh - 164px);
+    color: black;
+
+}
+
+.text-box {
+    background-color: rgba(0, 0, 0, 0.9);
+    border-radius: 12px;
+    padding: 1.5rem;
+    display: inline-block;
+    color: gold;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.carousel-inner {
+    height: calc(100vh - 164px);
+}
+/* from Bulma */
+
+.icon {
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.logo-font {
+    text-transform: uppercase;
+}
+
+.main-logo-link {
+    width: fit-content;
+    color: #fff;
+}
+
+
+.shop-now-button {
+    background: black;
+    color: #ffd700;
+    min-width: 260px;
+}
+
+.btn-black {
+    background: black;
+    color: white;
+}
+
+.btn-outline-black {
+    background: white;
+    color: black !important;
+    border: 1px solid black;
+}
+
+.btn-outline-black:hover,
+.btn-outline-black:active,
+.btn-outline-black:focus {
+    background: black;
+    color: #fff !important;
+}
+
+.shop-now-button:hover,
+.shop-now-button:active,
+.shop-now-button:focus,
+.btn-black:hover,
+.btn-black:active,
+.btn-black:focus {
+    background: #ffd700;
+    color: black;
+}
+
+.text-black {
+    color: black !important;
+}
+
+.border-black {
+    border: 1px solid black !important;
+}
+
+.bg-gold {
+    background: gold !important;
+    color: #000;
+}
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background: white;
+    z-index: -1;
+}
+
+a.category-badge > span.badge:hover {
+    background: #212529 !important;
+    color: #fff !important;
+}
+
+.btt-button {
+    height: 42px;
+    width: 42px;
+    position: fixed;
+    bottom: 5px;
+    right: 4px;
+}
+
+.btt-link,
+.update-link,
+.remove-item {
+    cursor: pointer;
+}
+
+input[name='q']::placeholder {
+    color: #aab7c4;
+}
+
+#top  {
+    background-color: black !important;
+    color: white !important;
+}
+#top a.nav-link,
+#top p {
+    color: white !important;
+}
+
+nav {
+    background-color: gold !important;
+    color: white !important;
+}
+
+#main-nav {
+    color: black;
+}
+
+
+/* ------------------- Bootstrap toast */
+
+.message-container {
+    position: fixed;
+    top: 75px;
+    right: 15px;
+    z-index: 99999999999;
+}
+
+.custom-toast {
+    overflow: visible;
+}
+
+.toast-capper {
+    height: 5px;
+}
+
+.bag-notification {
+    height: 100px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+/* Allauth form formatting */
+
+.allauth-form-inner-content p {
+    /*margin-top: 1.5 rem; /* mt-4 */
+    color: #6c757d; /* text-secondary */
+}
+
+.allauth-form-inner-content input {
+    border-color: #000;
+    border-radius: 0;
+}
+
+.allauth-form-inner-content label:not([for='id_remember']) {
+    display: none;
+}
+
+.allauth-form-inner-content input::placeholder {
+    color: #aab7c4;
+}
+
+.allauth-form-inner-content button,
+.allauth-form-inner-content input[type='submit'] {
+    /* btn */
+    display: inline-block;
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: #000;
+    border: 1px solid #000;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    border-radius: 0;
+
+        /* standard bootstrap btn transitions */
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.allauth-form-inner-content button:hover,
+.allauth-form-inner-content input[type='submit']:hover {	
+	color: #fff;
+    background-color: #222;
+    border-color: #222;
+}
+
+.allauth-form-inner-content a {
+	color: #17a2b8; /* text-info */
+}
+
+/* Product Form  */
+
+.btn-file {
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-file input[type="file"] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.custom-checkbox .custom-control-label::before {
+    border-radius: 0;
+    border-color: #dc3545;
+}
+
+.custom-checkbox .custom-control-input:checked~.custom-control-label::before {
+    background-color: #ae3b47;
+    border-color: #dc3545;
+    border-radius: 0;
+}
+
+/* Contact Form •/
+
+
+
+/* Footer Element */
+
+footer {
+    background-color: #000;
+    width: 100%;
+    padding: 20px 20px 10px 20px;
+
+}
+
+.hover-color {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: fit-content;
+}
+
+.hover-color:hover,
+.hover-color:active,
+.hover-color:focus {
+    box-shadow: 8px 8px 15px #ffd700;
+    width: fit-content;
+}
+
+.max-500 {
+    max-width: 500px;
+    border-radius: 12px;
+}
+
+
+/* ------------------- media queries */
+
+/* Slightly larger container on xl screens */
+@media (min-width: 1200px) {
+    .container {
+        max-width: 80%;
+    }
+}
+
+/* fixed top navbar only on medium and up */
+@media (min-width: 992px) {
+    .fixed-top-desktop-only {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1030;
+    }
+
+    .header-container {
+        padding-top: 164px;
+    }
+}
+
+/* pad the top a bit when navbar is collapsed on mobile */
+@media (max-width: 991px) {
+    .header-container {
+        padding-top: 116px;
+    }
+
+    body {
+        height: calc(100vh - 116px);
+    }
+
+    .display-4.logo-font.text-black {
+        font-size: 2rem;
+    }
+
+    .nav-link {
+        padding: 0.15rem;
+    }
+
+    .nav-link i.fa-lg {
+        font-size: 1rem;
+    }
+
+    .navbar-toggler {
+        padding: .6rem .6rem;
+        font-size: 1rem;
+    }
+
+    #delivery-banner h5 {
+        font-size: .9rem;
+    }
+
+    .btn.btn-outline-black.rounded-0,
+    .btn.btn-black.rounded-0 {
+        padding: .375rem .375rem;
+    }
+
+    .btn.btn-outline-black.rounded-0.btn-lg,
+    .btn-.btn-black.rounded-0.btn-lg {
+        padding: .375rem .375rem;
+        font-size: .75rem;
+        margin-bottom: 5px;
+    }
+
+    .increment-qty, .decrement-qty {
+        padding: .25rem .5rem !important;
+    }
+}
+
