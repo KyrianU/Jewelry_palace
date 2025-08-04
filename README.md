@@ -859,3 +859,9 @@ USE_AWS | TRUE
 ```
 
 When this is deployed, Heroku will run `python3 manage.py collectstatic` in the building process. The Static files will then be collected into a static folder in our s3 bucket.
+
+# Bugs
+
+Bug | Status | Fix/Commit Notes
+--- | --- | ---
+footer in profile page not expanding to the whole width of the page | ✅ | missing `</div>` tag before the `{% block content %}` in profile.html template
