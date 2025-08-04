@@ -1,4 +1,4 @@
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render, get_object_or_404, redirect
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from .models import UserProfile
@@ -34,6 +34,22 @@ def profile(request):
     return render(request, template, context)
 
 
+@login_required
+def delete_profile(request):
+    if request.user.is_superuser:
+        messages.error(request, "Admin and superuser accounts cannot be \
+                        deleted.")
+
+        return redirect('profile')
+
+    if request.method == 'POST':
+        user = request.user
+        user.delete()
+        messages.success(request, "Your profile has been deleted.")
+        return redirect('home')
+
+
+@login_required
 def order_history(request, order_number):
     """
     Display the order history for a given order number.
