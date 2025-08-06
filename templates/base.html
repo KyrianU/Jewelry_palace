@@ -196,18 +196,27 @@
         <!-- Newsletter Section -->
         <div class="col-12 col-md-4 text-center text-md-end">
             <h5 class="text-decoration-underline"><strong>Newsletter</strong></h5>
-            <form
-                action="https://herokuapp.us20.list-manage.com/subscribe/post?u=054cf146063d0f57628657cc0&amp;id=241241761f&amp;f_id=00724ee6f0"
-                method="post" target="_blank" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form"
-                class="validate">
-                <div class="input-group d-flex flex-column align-items-center w-100">
-                    <input class="form-control border border-black rounded-0 mb-2 w-auto" type="email"
-                       name="EMAIL" id="mce-EMAIL" placeholder="Enter Email">
-                    <button class="btn rounded-0 btn-light w-auto mt-0" type="submit" name="subscribe"
-                       id="mc-embedded-subscribe">Subscribe
-                    </button>
-                </div>
-            </form>
+            <div id="mc_embed_signup">
+              <form
+                  action="https://herokuapp.us20.list-manage.com/subscribe/post?u=054cf146063d0f57628657cc0&amp;id=241241761f&amp;f_id=00724ee6f0"
+                  method="post" target="_blank" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form"
+                  class="validate">
+                  <div class="input-group d-flex flex-column align-items-center w-100">
+                      <input class="form-control border border-black rounded-0 mb-2 w-auto" type="email"
+                        name="EMAIL" id="mce-EMAIL" placeholder="Enter Email">
+                      <button class="btn rounded-0 btn-light w-auto mt-0" type="submit" name="subscribe"
+                        id="mc-embedded-subscribe">Subscribe
+                      </button>
+                  </div>
+                  <div id="mce-responses" class="clear">
+                    <div class="response" id="mce-error-response" style="display: none;"></div>
+                    <div class="response" id="mce-success-response" style="display: none"></div>
+                  </div>
+                  <div aria-hidden="true" style="position: absolute; left: -5000px;">
+                    <input type="text" name="b_054cf146063d0f57628657cc0_241241761f" tabindex="-1" value="">
+                  </div>
+              </form>
+            </div>
         </div>
       </div>
     </div>
@@ -224,4 +233,20 @@
   </footer>
 
   </body>
+  <!--Mailchimp Signup form script-->
+  <script src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
+  <script>
+  (function($) {
+    window.fnames = new Array();
+    window.ftypes = new Array();
+    fnames[0]='EMAIL';ftypes[0]='email';
+    fnames[1]='FNAME';ftypes[1]='text';
+    fnames[2]='LNAME';ftypes[2]='text';
+    fnames[3]='ADDRESS';ftypes[3]='address';
+    fnames[4]='PHONE';ftypes[4]='phone';
+    fnames[5]='BIRTHDAY';ftypes[5]='birthday';
+    fnames[6]='COMPANY';ftypes[6]='text';
+  }(jQuery));
+  var $mcj = jQuery.noConflict(true);
+  </script>
 </html>

@@ -142,12 +142,14 @@ Comprehensive testing has been done across all aspects of the application. For m
 
 The Database scheme for Jewelry Palace is designed to efficiently all of the core functionality while maintaining data integrity and adequate performance. Below is the diagram show how the various models are connected to each other:
 
+
 <details>
   <summary>Database Scheme</summary>
 
-  ![](docs/database.png)
+  ![](docs/databaseiod.png)
 
   </details>
+
 
 
 7 Tables was created for the Wesbite. Order, OrderLineItem, Review, Contact, Product, Category and UserProfile
@@ -863,8 +865,8 @@ When this is deployed, Heroku will run `python3 manage.py collectstatic` in the 
 
 # Bugs
 
-Bug | Status | Fix/Commit Notes
+Bug | Status | Fix/
 --- | --- | ---
 footer in profile page not expanding to the whole width of the page | ✅ | missing `</div>` tag before the `{% block content %}` in profile.html template
 Carousel images showing as broken links on local & deployed site | ✅ | replaced `<img src="{{ MEDIA_URL }}staticfile>` to `<img src="{% static 'images/staticfile' %}">`
-Newsletter signup link broken | 
+Newsletter signup link broken | ✅ | Incorrect code copied from mailchimp
