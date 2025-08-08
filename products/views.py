@@ -81,6 +81,14 @@ def product_detail(request, product_id):
 
 
 @login_required
+def my_reviews(request):
+    reviews = Review.objects.filter(user=request.user).select_related(
+        'product')
+
+    return render(request, 'products/user_reviews.html', {'reviews': reviews})
+
+
+@login_required
 def add_review(request, product_id):
     """
     A view to add a new review
@@ -151,7 +159,7 @@ def delete_review(request, product_id, review_id):
         return redirect("product_detail", product_id=product_id)
 
     return render(
-        request, "products/confirm_delete_review.html",
+        request, "products/delete_review.html",
         {"review": review, "product": review.product})
 
 

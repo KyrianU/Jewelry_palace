@@ -148,6 +148,7 @@ input[name='q']::placeholder {
 nav {
     background-color: gold !important;
     color: white !important;
+
 }
 
 #main-nav {
@@ -291,6 +292,7 @@ footer {
     max-width: 500px;
     border-radius: 12px;
 }
+
 
 
 /* ------------------- media queries */
