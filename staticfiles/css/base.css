@@ -148,6 +148,7 @@ input[name='q']::placeholder {
 nav {
     background-color: gold !important;
     color: white !important;
+
 }
 
 #main-nav {
@@ -262,7 +263,11 @@ nav {
 
 /* Contact Form •/
 
-
+/* Reviews */
+.reviews-card small {
+    display: inline;  /* keep text on same line */
+    white-space: nowrap; /* prevent breaking between words */
+}
 
 /* Footer Element */
 
@@ -291,6 +296,7 @@ footer {
     max-width: 500px;
     border-radius: 12px;
 }
+
 
 
 /* ------------------- media queries */

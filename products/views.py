@@ -95,12 +95,14 @@ def add_review(request, product_id):
     """
 
     product = get_object_or_404(Product, pk=product_id)
-    user_review = product.reviews.all()
+    user_review = product.reviews.filter(user=request.user).first()
 
     if user_review:
         messages.error(request,
-                       'You have already reviewed this product.')
-        return redirect(reverse('product_detail', args=[product.id]))
+                       'Looks like you have already reviewed this product. '
+                       'Feel free to update it instead')
+        return redirect(
+            'edit_review', product_id=product.id, review_id=user_review.id)
 
     if request.method == 'POST':
         form = ReviewForm(request.POST)

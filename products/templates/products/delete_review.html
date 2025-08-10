@@ -15,17 +15,23 @@
 
 {% block content %}
 <div class="overlay"></div>
-<div class="container">
+<div class="container" style="height: 65vh;">
     <div class="row">
         <div class="col">
             <hr>
-            <h2 class="logo-font mb-4">Delete Review</h2>
+            <h2 class="logo-font mb-4 text-center">Delete Review</h2>
             <hr>
         </div>
     </div>
     <div class="row">
         <div class="col-12 col-lg-6">
             <p class="text-muted">You are about to delete your review for <strong>{{ product.name }}</strong></p>
+             <!-- Review Title -->
+             <div class="form-group">
+                <label for="title_id" class="font-weight-bold">Review Title:</label>
+                {{ form.title }}
+                {{ form.title.errors }}
+            </div>
             <div class="review-details">
                 <p><strong>Rating:</strong> {{review.rating }} / 5</p>
                 <p><strong>Comment:</strong> {{review.comment}} </p>

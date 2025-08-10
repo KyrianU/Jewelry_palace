@@ -458,6 +458,70 @@ Personalised terms and conditions created for Jewelry Palace. Just like the Priv
   </details>
 
 
+## My Reviews
+
+Authenticated users are able to leave reviews on products they have purchased to help other shoppers make informed decisions.
+
+The review system includes the following features:
+
+  * <strong>Leave a Review</strong>
+    - Each user can submit only *one* review per product. If they attempt to submit another for review for a previously reviewed product, an error message will pop up
+
+    <details>
+      <summary>Leave A Review</summary>
+
+      ![](docs/leaveareview.png)
+
+      </details>
+
+  * <strong>My Reviews</strong>
+    - This is the page that shows the user they list of reviews made by the user for different products
+
+    <details>
+      <summary>My Reviews</summary>
+
+      ![](docs/myreviews.png)
+
+      </details>
+  
+  * <strong>Edit Reviews</strong>
+    - Users can update the content of their excisting review to reflect their change of opinions
+
+    <details>
+      <summary>Edit My Review</summary>
+
+      ![](docs/editmyreview.png)
+
+      </details>
+    - Once the users review has been updated, a success message will appear at top right hand side of the page and the user will the be redirected to the product detail page of the product they have left a review for.
+
+    <details>
+      <summary>Review Updated</summary>
+
+      ![](docs/Reviewupdated.png)
+
+      </details>
+
+
+  * <strong>Delete Review</strong>
+    - Users can delete their review at any given time.
+
+    <details>
+      <summary>Delete Review</summary>
+
+      ![](docs/DeleteReview.png)
+
+      </details>
+
+    
+    <details>
+      <summary>Review Deleted<summary>
+
+      ![](docs/Reviewdeleted.png)
+
+      </details>
+
+
 ### Future Features
 
 There a few features that could be implemented in the future to improve the site functionality and user experience:
@@ -471,6 +535,7 @@ There a few features that could be implemented in the future to improve the site
 
 
 [Back to Top ⇧](#jewelry-palace)
+
 
 
 # Web Marketing 
@@ -870,4 +935,4 @@ Bug | Status | Fix/
 Footer in profile page not expanding to the whole width of the page | ✅ | missing `</div>` tag before the `{% block content %}` in profile.html template
 Carousel images showing as broken links on local & deployed site | ✅ | replaced `<img src="{{ MEDIA_URL }}staticfile>` to `<img src="{% static 'images/staticfile' %}">`
 Newsletter signup link broken | ✅ | Incorrect code copied from mailchimp
-Review date not rendering on "my review page" | ✅ | removed `created_at` and instead changed it to `date_added` in my `user_review.html` template
+Review date not rendering on "my review page" | ✅ | removed `created_at` and instead changed it to `date_added` in my `user_review.html` template, to match my review model

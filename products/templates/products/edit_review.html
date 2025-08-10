@@ -21,6 +21,13 @@
                     <h4 class="text-muted">Your Review</h4>
                     <form action="{% url 'edit_review' product.id review.id %}" method="POST" id="review-form">
                         {% csrf_token %}
+
+                         <!-- Review Title -->
+                         <div class="form-group">
+                            <label for="title_id" class="font-weight-bold">Review Title:</label>
+                            {{ form.title }}
+                            {{ form.title.errors }}
+                        </div>
                         
                         <!-- Rating Selection -->
                         <div class="form-group">

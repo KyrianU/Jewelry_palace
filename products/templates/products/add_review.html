@@ -6,7 +6,7 @@
 
 {% block page_header %}
     <div class="container text-center py-4" style="height: 40vh;">
-        <h2 class="logo-font">Write a Review for {{ product.name }}</h2>
+        <h2 class="logo-font mb-4">Write a Review for {{ product.name }}</h2>
     </div>
 {% endblock %}
 
@@ -19,6 +19,13 @@
                     <h4 class="text-muted">Your Review</h4>
                     <form method="POST" id="review-form">
                         {% csrf_token %}
+
+                        <!-- Review Title -->
+                        <div class="form-group">
+                            <label for="title_id" class="font-weight-bold">Review Title:</label>
+                            {{ form.title }}
+                            {{ form.title.errors }}
+                        </div>
 
                         <!-- Rating Section -->
                         <div class="form-group">

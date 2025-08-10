@@ -119,8 +119,8 @@
                         {% for review in product.reviews.all %}
                             <div class="review-box" style="border: 4px solid #ddd; padding: 15px; margin-bottom: 20px; border-radius: 10px;">
                                 <strong>{{ review.title|default:"(No Title)" }}</strong><br>
-                                <span>By {{ review.user.username }}</span> -
-                                <span>{{ review.rating }} *</span><br><br>
+                                <span>By {{ review.user.username }}</span><br>
+                                <span>{{ review.rating }} *</span><br>
 
                                 {% if review.comment %}
                                     <p>{{ review.comment }}</p>

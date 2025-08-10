@@ -8,6 +8,18 @@ class ReviewForm(forms.ModelForm):
     """
     Form for adding and editing reviews.
     """
+    title = forms.CharField(
+        max_length=200,
+        required=False,
+        widget=forms.TextInput(
+            attrs={
+                "class": "form-control",
+                "placeholder": "Title for your Review",
+            }
+        ),
+        label="Review Title"
+    )
+
     RATING_CHOICES = [(i, str(i)) for i in range(1, 6)]  # Ratings from 1 to 5
 
     rating = forms.ChoiceField(
@@ -47,7 +59,7 @@ class ReviewForm(forms.ModelForm):
 
         if not self.instance.pk and self.user and self.product:
             if Review.objects.filter(
-                   user=self.user, product=self.product).exist():
+                   user=self.user, product=self.product).exists():
                 raise ValidationError(
                     "You have already submitted a review for this product.")
 
