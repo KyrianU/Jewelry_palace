@@ -1,10 +1,8 @@
-html {
+html, body {
     height: 100%;
 }
 
 body {
-    /* background: linear-gradient(to right, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.1)),
-    url('/media/Homepage-chain-picture.jpg') no-repeat center center fixed; */
     background-size: cover;
     /* height: calc(100vh - 164px); */
     color: black;
@@ -295,6 +293,14 @@ footer {
 .max-500 {
     max-width: 500px;
     border-radius: 12px;
+}
+
+/* 404 Page */
+
+h2.display-3 {
+    margin-top: 0 !important;
+    line-height: 2.2em;
+    padding: 1rem;
 }
 
 
