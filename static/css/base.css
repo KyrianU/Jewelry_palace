@@ -295,6 +295,14 @@ footer {
     border-radius: 12px;
 }
 
+/* 404 Page */
+
+h2.display-3 {
+    margin-top: 0 !important;
+    line-height: 2.2em;
+    padding: 1rem;
+}
+
 
 
 /* ------------------- media queries */
