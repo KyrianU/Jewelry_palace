@@ -936,3 +936,4 @@ Footer in profile page not expanding to the whole width of the page | ✅ | miss
 Carousel images showing as broken links on local & deployed site | ✅ | replaced `<img src="{{ MEDIA_URL }}staticfile>` to `<img src="{% static 'images/staticfile' %}">`
 Newsletter signup link broken | ✅ | Incorrect code copied from mailchimp
 Review date not rendering on "my review page" | ✅ | removed `created_at` and instead changed it to `date_added` in my `user_review.html` template, to match my review model
+Favicon icon not pulling through on the deployed site | ✅ | re-routed favicon files from my media folder to static folder

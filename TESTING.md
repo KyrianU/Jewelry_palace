@@ -234,5 +234,28 @@ Firefox | No appearance or responsiveness issues | ✅Pass
 Google Chrome | No appearance or responsiveness issues | ✅Pass
 Microsoft Edge | No appearance or responsiveness issues | ✅Pass
 
+# Accessibility
 
+Tested | Results 
+--- | ---
+Home | <details><summary>Lighthouse Image</summary>![](docs/lighthouse/homereport.png)</details>
+About Us | <details><summary>Lighthouse Image</summary>![](docs/lighthouse/Abousus.png)</details>
+Contact | <details><summary>Lighthouse Image</summary>![](docs/lighthouse/contactus.png)</details>
+Privacy Policy | <details><summary>Lighthouse Image</summary>![](docs/lighthouse/Privacypolicy.png)</details>
+Terms & Conditions | <details><summary>Lighthouse Image</summary>![](docs/lighthouse/TsandCs.png)</details>
+Shopping Bag | <details><summary>Lighthouse Image</summary>![](docs/lighthouse/shoppingbag.png)</details>
+Product | <details><summary>Lighthouse Image</summary>![](docs/lighthouse/product.png)</details>
+Product Detail | <details><summary>Lighthouse Image</summary>![](docs/lighthouse/productdetail.png)</details>
+Checkout | <details><summary>Lighthouse Image</summary>![](docs/lighthouse/checkoutreport.png)</details>
+Checkout Success | <details><summary>Lighthouse Image</summary>![](docs/lighthouse/checkoutsuccess.png)</details>
+Profile | </details><summary>Lighthouse Image</summary>![](docs/lighthouse/profilereport.png)</details>
+Product Management | <details><summary>Lighthouse Image</summary>![](docs/lighthouse/productreport.png)</details>
+My Reviews | <details><summary>Lighthouse Image</summary>![](docs/lighthouse/myreviewsreport.png)</details>
+Edit Review | <details><summary>Lighthouse Image</summary>![](docs/lighthouse/reviewedit.png)</details>
+Delete Review | <details><summary>Lighthouse Image</summary>![](docs/lighthouse/reviewdelete.png)</details>
+Add Review | <details><summary>Lighthouse Image</summary>![](docs/lighthouse/addreview.png)</details>
+404 | <details><summary>Lighthouse Image</summary>![](docs/lighthouse/404.png)</details>
+Sign In | <details><summary>Lighthouse Image</summary>![](docs/lighthouse/Signinreport.png)</details>
+Sign Out | <details><summary>Lighthouse Image</summary>![](docs/lighthouse/Signoutreport.png)</details>
+Sign Up | <details><summary>Lighthouse Image</summary>![](docs/lighthouse/signupreport.png)</details>
 
