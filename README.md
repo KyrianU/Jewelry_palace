@@ -1,4 +1,6 @@
-# Jewelry Palace 
+# Jewelry Palace
+
+![](docs/jewelrypalace.png)
 
 ## Introduction
 
