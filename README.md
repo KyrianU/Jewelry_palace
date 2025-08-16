@@ -517,7 +517,7 @@ The review system includes the following features:
 
     
     <details>
-      <summary>Review Deleted<summary>
+      <summary>Review Deleted</summary>
 
       ![](docs/Reviewdeleted.png)
 
