@@ -388,6 +388,8 @@ h2.display-3 {
     .carousel-inner {
         height: 40vh;
     }
+
+
 }
 
 @media (min-width: 820px) and (max-width: 1024px) {
@@ -403,6 +405,24 @@ h2.display-3 {
 
     .carousel-inner {
         height: 20%;
+    }
+
+    .review-container {
+        margin-top: 20% !important;
+        margin-bottom: 58% !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .review-container {
+        margin-top: 10% !important;
+        margin-bottom: 40% !important;
+    }
+}
+
+@media (max-width: 430px) {
+    .review-container {
+        margin-top: 15vh !important;
     }
 }
 
