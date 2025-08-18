@@ -261,7 +261,7 @@ The header includes the main background image, which also features a welcome mes
 <details>
   <summary>Hero Image & Links</summary>
 
-  ![](docs/heroimage.png)
+  ![](docs/heroimg.png)
 
   </details>
 
@@ -269,7 +269,7 @@ The header includes the main background image, which also features a welcome mes
 <details>
   <summary>Profile navigation</summary>
 
-  ![](docs/loggedin.png)
+  ![](docs/userloggedin.png)
 
   </details>
 
@@ -302,7 +302,7 @@ The Homepage features a carousel just underneath the hero image. The carousel co
 <details>
   <summary>Carousel 2</summary>
 
-  ![](docs/carouselpt2.png)
+  ![](docs/Carouselpart2.png)
 
   </details>
 
@@ -310,7 +310,7 @@ The Homepage features a carousel just underneath the hero image. The carousel co
 <details>
   <summary>Carousel 3</summary>
 
-  ![](docs/carouselpt3.png)
+  ![](docs/carouselpart3.png)
 
   </details>
 
@@ -930,6 +930,8 @@ USE_AWS | TRUE
 
 When this is deployed, Heroku will run `python3 manage.py collectstatic` in the building process. The Static files will then be collected into a static folder in our s3 bucket.
 
+[Back to Top ⇧](#jewelry-palace)
+
 # Bugs
 
 Bug | Status | Fix/
@@ -939,3 +941,42 @@ Carousel images showing as broken links on local & deployed site | ✅ | replace
 Newsletter signup link broken | ✅ | Incorrect code copied from mailchimp
 Review date not rendering on "my review page" | ✅ | removed `created_at` and instead changed it to `date_added` in my `user_review.html` template, to match my review model
 Favicon icon not pulling through on the deployed site | ✅ | re-routed favicon files from my media folder to static folder
+
+[Back to Top ⇧](#jewelry-palace)
+
+# Credits
+
+The following resourses were consulted frequently 
+
+- [Django Documentation](https://docs.djangoproject.com/en/5.2/)
+- [Django Allauth](https://django-allauth.readthedocs.io/en/latest/)
+- [Stripe Documentation](https://docs.stripe.com/)
+- [Boostrap Documentation](https://getbootstrap.com/docs/5.0/getting-started/introduction/)
+- [AWS Documentation](https://docs.aws.amazon.com/s3/)
+- [Javascript Documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+- [Word Tracker](https://www.wordtracker.com/search?query=men%27s%20jewellery)
+- [Boutique Ado Walkthrough](https://codeinstitute.net/)
+- [Gmail API](https://developers.google.com/workspace/gmail/api/guides)
+
+Visuals
+
+- [Pexels](https://www.pexels.com/)
+- [Favicon](https://favicon.io/)
+- [Ali Express](https://www.aliexpress.com/?spm=a2g0o.home.logo.1.31d56278T29XNJ)
+- [Coloors](https://coolors.co/)
+
+Debugging Issues
+
+- [Django Forum](https://forum.djangoproject.com/)
+- [ChatGPT](https://openai.com/index/chatgpt/)
+- [Stackoverflow](https://stackoverflow.com/questions/75626034/i-want-to-get-the-specific-reviews-from-a-different-model-django)
+
+## Acknowledgements
+
+I want to take this opportunity to thank the Tutors at Code Institute for the guidance and advices through out my project. 
+
+To my Mentor Roghit, thank you for the advices and insightfull feedback and for helping me stay on track.
+
+Thank you to Coding Institute for providing the course material that helped me make this project possible.
+
+I do want to also thank ChatGPT, for helping resolve some critical issues I faced towards the end of this project.

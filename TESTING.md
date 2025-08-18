@@ -1,5 +1,61 @@
 # Testing
 
+## User Story Testing
+
+* As a User, I can browse the product categories in order to find what I am looking for
+    - Products can be sorted by category
+    - Product counts shows that how many products are available in each category.
+
+* As a user, I want to be able to search for a product by name in order to locate specific items with ease
+    - The search bar is available in the product navigation bar
+    - The search bar will return results for Product which matches the keyword in the title or description
+
+* As a user, I can see a detailed breakdown of my order total, which information such as discounts cost, shipping costs in order to gain a full understanding of the full price I am paying.
+    - Detail breakdown of the order are shown once the order has been successfully processed
+    - Detail breakdown is also sent via email to the customer
+
+* As a user, I want to be able to login and register in order to save my details and view my order history
+    - Login and register links are working succesfully
+    - Order history is shown on the my profile page - with order number
+    - Chosen delivery address and other contact details saved under 'my profile"
+
+* As a user, I want to be able to freely shop on the website, wishing for my data to be protected
+    - Secure payment option using Stripe
+
+* As a user, I want to a receive a confirmation message for when my order has been successful
+    - Payment confirmation message appears on screen once stripe has accepted the payment
+    
+* As a user, I can sign up for a newsletter so I can receive regular updates and promotions
+    - Newsletter Signup is located on the footer of the page
+    - The user can suscribe to the newsletter by entering their email address on the newsletter form
+    - The newsletter sign up form is available on all pages
+
+* As a user, I can leave reviews for products so that I can share feedback with other customers
+    - the user can submit a review by click on the leave a review button at the bottom of the product detail page
+    - The leave a review is only available for logged in users
+    - Existing reviews are also visible on the product detail page
+    - Users cannot leave more than one review for a specific product
+    - Users are able to udpdate and edit their reviews should they wish too
+    - Under the My Review page, users can see the list of the reviews they have left(if they have left any)
+
+* As an Admin, I can add new products to the collection so that users can see and purchase the latest item available on the site 
+    - The admin user can add a product successfully from the product management page
+
+* As an admin, I can edit existing product detail such as name, price, and description in order for the collection to be up to date as always
+    - The admin user can edit an existing product from the product page. Only the admin user has the ability/authorisation to do so 
+    - Toast message confirming products has been edited
+
+* As admin, I have the functionality to delete products from the site if I wanted to discontinue a certain product or refresh the site.
+    - The admin user can Delete product should they wish to do so via the product page
+    - Toast message confirming that the products in question has been deleted.
+    - Deleted product then dissapears from the product page
+
+* As an admin, I am able to assign products to specific categories so that users can have an easier time finding their chosen item while browsing
+    - Verify only admin have access to the product management page
+    - Open product Add/Edit product page and assign one ore multiple categories
+    - As a user, navigate to the product page and confirm only products that are assgined to that category is dsplayed
+
+
 ## Code Validation 
 
 ### HTML
@@ -248,7 +304,7 @@ Product | <details><summary>Lighthouse Image</summary>![](docs/lighthouse/produc
 Product Detail | <details><summary>Lighthouse Image</summary>![](docs/lighthouse/productdetail.png)</details>
 Checkout | <details><summary>Lighthouse Image</summary>![](docs/lighthouse/checkoutreport.png)</details>
 Checkout Success | <details><summary>Lighthouse Image</summary>![](docs/lighthouse/checkoutsuccess.png)</details>
-Profile | </details><summary>Lighthouse Image</summary>![](docs/lighthouse/profilereport.png)</details>
+Profile | <details><summary>Lighthouse Image</summary>![](docs/lighthouse/profilereport.png)</details>
 Product Management | <details><summary>Lighthouse Image</summary>![](docs/lighthouse/productreport.png)</details>
 My Reviews | <details><summary>Lighthouse Image</summary>![](docs/lighthouse/myreviewsreport.png)</details>
 Edit Review | <details><summary>Lighthouse Image</summary>![](docs/lighthouse/reviewedit.png)</details>
