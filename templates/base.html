@@ -237,14 +237,14 @@
   }(jQuery));
   var $mcj = jQuery.noConflict(true);
   </script>
-      {% block postloadjs %}
-      <script>
-        $('.toast').toast('show');
-      </script>
-      {% endblock %}
-      <script>
-        // Sets the current year
-        document.getElementById('current-year').textContent = new Date().getFullYear();
-    </script>
+  {% block postloadjs %}
+  <script>
+    $('.toast').toast('show');
+  </script>
+  {% endblock %}
+  <script>
+    // Sets the current year
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+  </script>
   </body>
 </html>
