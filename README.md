@@ -941,6 +941,7 @@ Carousel images showing as broken links on local & deployed site | ✅ | replace
 Newsletter signup link broken | ✅ | Incorrect code copied from mailchimp
 Review date not rendering on "my review page" | ✅ | removed `created_at` and instead changed it to `date_added` in my `user_review.html` template, to match my review model
 Favicon icon not pulling through on the deployed site | ✅ | re-routed favicon files from my media folder to static folder
+Navigation menu toggle for mobile screen not working | ✅ | missing `#` on the `#main-nav` Id on the button element in base.html
 
 [Back to Top ⇧](#jewelry-palace)
 
@@ -980,3 +981,5 @@ To my Mentor Roghit, thank you for the advices and insightfull feedback and for 
 Thank you to Coding Institute for providing the course material that helped me make this project possible.
 
 I do want to also thank ChatGPT, for helping resolve some critical issues I faced towards the end of this project.
+
+[Back to Top ⇧](#jewelry-palace)
