@@ -158,11 +158,7 @@
     {% block content %}
     {% endblock %}
 
-    {% block postloadjs %}
-    <script type="text/javascript">
-      $('.toast').toast('show');
-    </script>
-    {% endblock %}
+
   <!-- Footer -->
   <footer class="bg-black text-white py-4">
     <div class="container">
@@ -222,11 +218,6 @@
             <p class="mb-0">&copy; <span id="current-year">2025</span> Jewelry Palace. All rights reserved</p>
         </div>
     </div>
-
-    <script>
-        // Sets the current year
-        document.getElementById('current-year').textContent = new Date().getFullYear();
-    </script>
   </footer>
 
 
@@ -246,5 +237,14 @@
   }(jQuery));
   var $mcj = jQuery.noConflict(true);
   </script>
+      {% block postloadjs %}
+      <script>
+        $('.toast').toast('show');
+      </script>
+      {% endblock %}
+      <script>
+        // Sets the current year
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
   </body>
 </html>
