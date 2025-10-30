@@ -1,0 +1,83 @@
+[
+    {
+        "pk": 1,
+        "model": "faq.faq",
+        "fields": {
+            "category": 1,
+            "question": "What is the best way to clean my chain?",
+            "answer": "Wipe with a soft, dry cloth after each wear. For a deeper clean, soak briefly in warm water, rinse and pat dry with a link-free cloth."
+        }
+    },
+    {
+        "pk": 2,
+        "model": "faq.faq",
+        "fields": {
+            "category": 1,
+            "question": "How do I prevent my necklace or Cuban Chain from tangling?",
+            "answer": "Always lay chains flat or hang them individually when storing. Avoid tossing them into boxes with other itmes. For travel, best practice is to use a chain pouch or jewellery roll."
+        }
+    },
+    {
+        "pk": 3,
+        "model": "faq.faq",
+        "fields": {
+            "category": 2,
+            "question": "Can I wear my bangles or bracelets every day?",
+            "answer": "Light daily wear is fine, but remove them during activities that could cause scratches or dents (e.g, workouts, cleaning, heavy lifting). Regular wear of plated pieces can cause natural fading over time"
+        }
+    },
+    {
+        "pk": 4,
+        "model": "faq.faq",
+        "fields": {
+            "category": 2,
+            "question": "How do I store my bracelets/bangles?",
+            "answer": "Keep each piece seperate in a pouch or box to prevent rubbing. For stacked sets, consider wrapping each piece in a soft cloth to maintain their finish"
+        }
+    },
+    {
+        "pk": 5,
+        "model": "faq.faq",
+        "fields": {
+            "category": 3,
+            "question": "How do I clean my rings safely at home?",
+            "answer": "Mix a few drops of mild dish soap with warm water, Soak your ring for 5-10mins, gently brush with a soft toothbrush, rinse and dry throrougly. Avoid harsh chemichals or abrasives"
+        }
+    },
+    {
+        "pk": 6,
+        "model": "faq.faq",
+        "fields": {
+            "category": 3,
+            "question": "My Ring feels loose/tight - what should I do?",
+            "answer": "Temperature changes can cause minor size variations, if your ring consitently feels uncomfortable, we recommend a professional resizing by a jeweller"
+        }
+    },
+    {
+        "pk": 7,
+        "model": "faq.faq",
+        "fields": {
+            "category": 3,
+            "question": "How Can I prevent scratches on my ring?",
+            "answer": "Avoid stacking rings of different metals or hardness. For example, diamond rings can scratch gold bands. It is best to store each rings seperately"
+        }
+    },
+    {
+        "pk": 8,
+        "model": "faq.faq",
+        "fields": {
+            "category": 1,
+            "question": "My necklace keeps getting kinks - what can I do?",
+            "answer": "Lay it flat or hang it from a hook when not in use. If a kink occurs, gently massage it out with your fingers"
+        }
+    },
+    {
+        "pk": 9,
+        "model": "faq.faq",
+        "fields": {
+            "category": 2,
+            "question": "can I wear multiple bracelets together?",
+            "answer": "In short, yes! But to protect the finish, mix similar metals and avoid stacking delicate pieces with heavy or textured ones."
+        }
+    }
+]

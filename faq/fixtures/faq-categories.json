@@ -1,0 +1,23 @@
+[
+    {
+        "pk": 1,
+        "model": "faq.faqcategory",
+        "fields": {
+            "name": "Necklaces"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "faq.faqcategory",
+        "fields": {
+            "name": "Rings"
+        }
+    },
+    {
+        "pk": 3,
+        "model": "faq.faqcategory",
+        "fields": {
+            "name": "Bracelets"
+        }
+    }
+]
