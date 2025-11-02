@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}FAQs | Jewellery Care{% endblock %}
+
+{% block content %}
+<div class="container py-5">
+    <h1 class="text-center mb-4 fw-bold">Frequently Asked Questions</h1>
+
+    <!-- Category Navigation -->
+    <div class="text-center mb-5">
+        <h5 class="mb-3">Browse By Category</h5>
+        <div class="d-flex flex-wrap justify-content-center gap-3">
+            {% for cat in category_list %}
+                <a
+                    href="?category={{ cat.id }}"
+                    class="btn {% if category and category.id == cat.id %}btn-dark{% else %}btn-outline-dark{% endif %} rounded-pill px-4">
+                    {{ cat.name }}
+                </a>
+            {% endfor %}
+        </div>
+    </div>
+
+    <!-- Selected Category -->
+    {% if category %}
+        <h3 class="mb-4 text-center text-uppercase">{{ category.name }}</h3>
+    {% endif %}
+
+    <!-- FAQs Section -->
+    {% if faqs %}
+        <div class="accordion" id="faqAccordion">
+            {% for item in faqs %}
+                <div class="accordion-item mb-3 border-0 shadow-sm rounded-3">
+                    <h2 class="accordion-header" id="heading{{ item.id }}">
+                        <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapse{{ item.id }}" aria-expanded="false" aria-controls="collapse{{ item.id }}">
+                            {{ item.question }}
+                        </button>
+                    </h2>
+                    <div id="collapse{{ item.id }}" class="accordion-collapse collapse"
+                         aria-labelledby="heading{{ item.id }}" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            {{ item.answer }}
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    {% else %}
+        <p class="text-center text-muted mt-5">No FAQs available for this category yet.</p>
+    {% endif %}
+</div>
+{% endblock %}
