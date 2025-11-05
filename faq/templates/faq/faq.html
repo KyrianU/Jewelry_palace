@@ -18,7 +18,7 @@
             {% for cat in category_list %}
                 <a
                     href="?category={{ cat.id }}"
-                    class="btn {% if category and category.id == cat.id %}btn-dark{% else %}btn-outline-dark{% endif %} rounded-pill px-4">
+                    class="btn {% if category and category.id == cat.id %}btn-warning{% else %}btn-outline-dark{% endif %} rounded-pill px-4">
                     {{ cat.name }}
                 </a>
             {% endfor %}
@@ -36,9 +36,10 @@
             {% for item in faqs %}
                 <div class="accordion-item mb-3">
                     <h2 class="accordion-header" id="heading{{ item.id }}">
-                        <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapse{{ item.id }}" aria-expanded="false" aria-controls="collapse{{ item.id }}">
+                        <button class="accordion-button collapsed fw-semibold" type="button" data-toggle="collapse"
+                                data-target="#collapse{{ item.id }}" aria-expanded="false" aria-controls="collapse{{ item.id }}">
                             {{ item.question }}
+                            <span class="icon">&#x25B6;</span>
                         </button>
                     </h2>
                     <div id="collapse{{ item.id }}" class="accordion-collapse collapse"

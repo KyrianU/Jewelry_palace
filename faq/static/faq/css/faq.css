@@ -10,9 +10,21 @@
 }
 
 .accordion-button {
+    display: flex;
     background-color: transparent !important;
     border: none !important;
     box-shadow: none !important;
+    width: 100%;
+    font-weight: 900 !important;
+    font-size: 1.2rem;
+
+}
+
+.accordion-button:focus,
+.accordion-button-active {
+    outline: none !important;
+    box-shadow: none !important;
+    border-color: transparent !important;
 }
 
 .accordion-header {
@@ -29,13 +41,20 @@
     padding: 10px;
 }
 
+.accordion-body {
+    font-style: italic;
+}
+
 .icon {
     font-size: 20px;
     margin-left: auto;
-    transform: rotate(90deg);
+    transform: rotate(0deg);
     transition: all 0.3s ease;
+    color: gold;
 }
 
-.open .icon {
-    transform: rotate(0);
+button[aria-expanded="true"] .icon {
+    transform: rotate(90deg);
 }
+
+
