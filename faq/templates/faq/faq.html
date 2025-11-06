@@ -9,7 +9,7 @@
 
 {% block content %}
 <div class="container py-5">
-    <h1 class="text-center mb-4 fw-bold">Frequently Asked Questions</h1>
+    <h2 class="text-center mb-4 fw-bold">Frequently Asked Questions</h2>
 
     <!-- Category Navigation -->
     <div class="text-center mb-5">
@@ -18,7 +18,7 @@
             {% for cat in category_list %}
                 <a
                     href="?category={{ cat.id }}"
-                    class="btn {% if category and category.id == cat.id %}btn-warning{% else %}btn-outline-dark{% endif %} rounded-pill px-4">
+                    class="btn {% if category and category.id == cat.id %}btn-warning{% else %}btn-outline-dark{% endif %} rounded-0 mr-2 px-4">
                     {{ cat.name }}
                 </a>
             {% endfor %}
