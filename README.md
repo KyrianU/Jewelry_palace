@@ -523,6 +523,17 @@ The review system includes the following features:
 
       </details>
 
+## FAQ
+
+The FAQ page lists the most frequently asked question in individual accordions. The questions are always visible whilst the answers remain hidden until the accordion is clicked. The accordions can be split into 3 categories (Necklace, Rings & Bracelets) which allows users to quickly questions related to their chose product.
+
+<details>
+  <summary>FAQ</summary>
+
+  ![](docs/faq.png)
+
+  </details>
+
 
 ### Future Features
 
