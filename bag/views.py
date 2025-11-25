@@ -20,6 +20,15 @@ def add_to_bag(request, item_id):
 
     product = get_object_or_404(Product, pk=item_id)
     quantity = int(request.POST.get('quantity'))
+
+    if quantity > 99:
+        quantity = 99
+        messages.warning(request, "Maximum allowed quantity is 99.")
+
+    if quantity < 1:
+        quantity = 1
+        messages.warning(request, "Minimum allowed quantity is 1.")
+
     redirect_url = request.POST.get('redirect_url')
     size = None
     if 'product_size' in request.POST:
@@ -60,6 +69,15 @@ def adjust_bag(request, item_id):
 
     product = get_object_or_404(Product, pk=item_id)
     quantity = int(request.POST.get('quantity'))
+
+    if quantity > 99:
+        quantity = 99
+        messages.warning(request, "Maximum allowed quantity is 99.")
+
+    if quantity < 1:
+        quantity = 1
+        messages.warning(request, "Minimum allowed quantity is 1.")
+
     size = None
     if 'product_size' in request.POST:
         size = request.POST['product_size']
