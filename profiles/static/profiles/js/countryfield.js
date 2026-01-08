@@ -1,8 +1,10 @@
+/* jshint esversion: 11, jquery: true */
+
 // Check the initial value of the country dropdown 
 let countrySelected = $('#id_default_country').val();
 if(!countrySelected) {
     $('#id_default_country').css('color', '#aab7c4');
-};
+}
 
 /**
  * Event listener for the Country dropdown's change event.
