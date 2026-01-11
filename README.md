@@ -170,6 +170,8 @@ The Order model contains information in relation to a customer's final order. It
 
 The OrderlineItem table contains information in regards to an order. It has the following fields Primary Key Id, product_size, quantity, lineitem_total, order_id and product_id.
 
+The FAQ table is used to store frequently asked questions and their corresponding answers to help users find information quickly without needing to contact support. These questions may relate to orders, delivery, returns, payments or aftercare. It has the following fields of Primary Key ID, faq_category, question and answer.
+
 
 [Back to Top ⇧](#jewelry-palace)
 
@@ -735,6 +737,7 @@ EMAIL_HOST_USER | your_email_address
 SECRET_KEY | your_secret_key
 STRIPE_PUBLIC_KEY | your_stripe_public_key
 STRIPE_SECRET_KEY | your_stripe_secret_key
+STRIPE_WEBHOOKS | your_stripe_wh_secret
 
 - To prepare for the project to be deployed, open the terminal in *Visual Code* and ensure `gunicorn` and `psycopg2` are installed:
 

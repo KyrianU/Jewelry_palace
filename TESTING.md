@@ -62,6 +62,10 @@
 
 [W3C Markup Validator](https://validator.w3.org/nu/) was used to Validate the HTML code for each html file. HTML was performed via source code text input
 
+I'm aware of the recent changes with the HTML W3C validator dealing with aria-labelledby and headings, but these are not from my code specifically, they are from bootstrap's dropddown functionality, and would require changing from a div to unorderer list, but it risks potentially breaking the dropdown functionality, therefore I've left it as it is for now
+
+<details><summary>W3C validation error</summary>![](docs/testing.md/W3Cerror.png) </details>
+
 Page | Result | Screenshot | Pass/Fail
 --- | --- | --- | ---
 About | No errors or warnings to show | <details><summary>Validation Screenshot</summary>![](docs/testing.md/Sucess-massage.png) </details> | Pass
