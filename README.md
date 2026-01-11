@@ -148,13 +148,13 @@ The Database scheme for Jewelry Palace is designed to efficiently all of the cor
 <details>
   <summary>Database Scheme</summary>
 
-  ![](docs/databaseiod.png)
+  ![](docs/diagram.png)
 
   </details>
 
 
 
-7 Tables was created for the Wesbite. Order, OrderLineItem, Review, Contact, Product, Category and UserProfile
+8 Tables was created for the Wesbite. Order, OrderLineItem, Review, Contact, Product, Category, UserProfile and FAQ
 
 The Contact table is used by users to submit queries that they may have, ranging from general inquiries, Returns, Order, Feedback, Availability and any oher adhoc queries. It has the following fields of Primary Key ID, name, email, subject and body.
 
