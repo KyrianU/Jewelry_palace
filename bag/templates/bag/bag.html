@@ -140,7 +140,8 @@
 <script>
     // update item 
     $('.update-link').click(function(e){
-        var form = $(this).prev('.update-form');
+        e.preventDefault();
+        var form = $(this).closest('td').find('.update-form');
         form.submit();
     });
     
