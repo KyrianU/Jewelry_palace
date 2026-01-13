@@ -544,7 +544,7 @@ There a few features that could be implemented in the future to improve the site
 - Additional payment options
 - Gift cards
 - Promo codes when at checkout
-- contact form management function - main reply function when a user has sent an enquirty via the contact page 
+- contact form management function - main reply function when a user has sent an enquiry via the contact page 
 - newsletter unsuscribe function
 - Increase stock variety (i.e watches, earrings and anklets)
 
@@ -948,7 +948,7 @@ When this is deployed, Heroku will run `python3 manage.py collectstatic` in the 
 
 # Bugs
 
-Bug | Status | Fix/
+Bug | Status | Fix
 --- | --- | ---
 Footer in profile page not expanding to the whole width of the page | ✅ | missing `</div>` tag before the `{% block content %}` in profile.html template
 Carousel images showing as broken links on local & deployed site | ✅ | replaced `<img src="{{ MEDIA_URL }}staticfile>` to `<img src="{% static 'images/staticfile' %}">`
@@ -990,7 +990,7 @@ Debugging Issues
 
 I want to take this opportunity to thank the Tutors at Code Institute for the guidance and advices through out my project. 
 
-To my Mentor Roghit, thank you for the advices and insightfull feedback and for helping me stay on track.
+To the mentors at Code Institute, thank you for the advices and insightfull feedback and for helping me stay on track.
 
 Thank you to Coding Institute for providing the course material that helped me make this project possible.
 
